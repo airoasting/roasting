@@ -2,7 +2,7 @@
 
 | 항목 | 값 |
 |---|---|
-| **Author** | jade@linercorp.com (AI ROASTING / airoasting) |
+| **Author** | jaydenjkang@gmail.com (AI ROASTING / airoasting) |
 | **Date** | 2026-05-10 |
 | **Status** | Draft (pending user review) |
 | **Target Repo** | `airoasting/roasting` |

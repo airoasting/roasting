@@ -120,7 +120,7 @@ config.local.json
 ```
 MIT License
 
-Copyright (c) 2026 AI ROASTING (jade@linercorp.com)
+Copyright (c) 2026 AI ROASTING (jaydenjkang@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -409,7 +409,7 @@ jobs:
 - [ ] **Step 1:** Run:
 
 ```bash
-git config user.email "jade@linercorp.com"
+git config user.email "jaydenjkang@gmail.com"
 git config user.name "Jayden Kang"
 git add -A
 git status
