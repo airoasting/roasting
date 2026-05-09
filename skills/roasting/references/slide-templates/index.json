@@ -1,0 +1,686 @@
+[
+  {
+    "id": "mckinsey-navy",
+    "name": "맥킨지 네이비 (McKinsey Navy)",
+    "color": "mixed",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/mckinsey-navy/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "전략적",
+      "권위 있는",
+      "구조적",
+      "데이터 중심",
+      "컨설팅",
+      "전략 보고서",
+      "경영진 발표",
+      "M&A 자문",
+      "컨설팅 산출물",
+      "이사회 발표",
+      "딥 네이비 캔버스, 풍부한 여백, 액션 타이틀 구조의 시그니처 무드입니다."
+    ]
+  },
+  {
+    "id": "bain-red",
+    "name": "베인 레드 (Bain Red)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/bain-red/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "결과 지향",
+      "명료한",
+      "구조적",
+      "실행 중심",
+      "컨설팅",
+      "프로젝트 결과 보고",
+      "실행 로드맵",
+      "성장 전략",
+      "PE 듀딜리전스",
+      "경영진 워크숍",
+      "화이트 캔버스에 시그니처 레드를 입혔습니다. 깔끔한 그리드와 결과 중심의 톤입니다."
+    ]
+  },
+  {
+    "id": "bcg-green",
+    "name": "비씨지 그린 (BCG Green)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/bcg-green/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "지적인",
+      "사려 깊은",
+      "구조적",
+      "조용한 권위",
+      "컨설팅",
+      "전략 권고안",
+      "성장 점유율 분석",
+      "디지털 전환 로드맵",
+      "시니어 경영진 인사이트",
+      "포트폴리오 전략",
+      "시그니처 다크 그린과 절제된 그리드입니다. 사고의 깊이를 강조하는 프로페셔널 스타일입니다."
+    ]
+  },
+  {
+    "id": "navy-gold",
+    "name": "네이비 골드 (Navy Gold)",
+    "color": "mixed",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/navy-gold/template.html",
+    "slide_count": 18,
+    "keywords": [
+      "기관적인",
+      "신뢰감",
+      "사려 깊은",
+      "무게감 있는",
+      "IR 덱",
+      "컨설팅 산출물",
+      "이사회 발표",
+      "법무·정책 브리프",
+      "짙은 남색 배경에 골드 포인트입니다. 이사회, IR, 정책 보고에 어울립니다."
+    ]
+  },
+  {
+    "id": "navy-library",
+    "name": "딥 네이비 서재 (Deep Navy Library)",
+    "color": "dark",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/navy-library/template.html",
+    "slide_count": 9,
+    "keywords": [
+      "학자적인",
+      "문학적인",
+      "사려 깊은",
+      "조용한",
+      "지적인",
+      "리서치 결과물",
+      "화이트 페이퍼·롱폼 리포트",
+      "대학·학술 덱",
+      "어드바이저리 산출물",
+      "어두운 남색에 따뜻한 노란 글씨입니다. 논문, 리서치 보고서에 어울립니다."
+    ]
+  },
+  {
+    "id": "bw-typo",
+    "name": "흑백 타이포 (Black & White Typo)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/bw-typo/template.html",
+    "slide_count": 18,
+    "keywords": [
+      "절제된",
+      "문학적인",
+      "아카이브풍",
+      "장부 같은",
+      "사용자 리서치 합의문",
+      "화이트 페이퍼",
+      "롱폼 리포트",
+      "학술 덱",
+      "아이보리 종이에 검정 글자만 썼습니다. 색 없이 글자로만 말하는 덱입니다."
+    ]
+  },
+  {
+    "id": "calm-classic",
+    "name": "차분한 클래식 (Calm Classic)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/calm-classic/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "조용한",
+      "사려 깊은",
+      "우아한",
+      "웜 미니멀",
+      "투자 논제",
+      "화이트 페이퍼",
+      "어드바이저리 산출물",
+      "리서치 리포트",
+      "따뜻한 중립 색상에 클래식 글꼴입니다. 정제되고 여유로운 톤입니다."
+    ]
+  },
+  {
+    "id": "soft-classic",
+    "name": "소프트 클래식 (Soft Classic)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/soft-classic/template.html",
+    "slide_count": 12,
+    "keywords": [
+      "문학적인",
+      "우아한",
+      "조용한",
+      "웜 클래식",
+      "에디토리얼 피처",
+      "롱폼 브랜드 스토리",
+      "갤러리·미술관",
+      "웨딩·라이프스타일 미디어",
+      "따뜻한 종이에 파스텔 포인트입니다. 우아하고 조용한 느낌입니다."
+    ]
+  },
+  {
+    "id": "grid-blue",
+    "name": "모눈종이 블루 (Grid Paper Blue)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/grid-blue/template.html",
+    "slide_count": 8,
+    "keywords": [
+      "에디토리얼",
+      "디자인 리서치",
+      "학구적",
+      "모더니스트",
+      "테크 인쇄물",
+      "디자인 트렌드 / 리서치 리포트",
+      "스튜디오 연간·시즌 회보",
+      "에이전시 역량 덱",
+      "모눈종이 위 짙은 파랑 글꼴입니다. 리서치, 디자인 리포트에 어울립니다."
+    ]
+  },
+  {
+    "id": "dark-magazine",
+    "name": "다크 매거진 (Dark Magazine)",
+    "color": "dark",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/dark-magazine/template.html",
+    "slide_count": 16,
+    "keywords": [
+      "에디토리얼",
+      "드라마틱",
+      "강렬한",
+      "매거진",
+      "브랜드 매니페스토",
+      "창업자 비전 덱",
+      "매거진 / 문화 피치",
+      "디자인 토크",
+      "어두운 캔버스에 오렌지 단 한 점입니다. 매거진 표지처럼 떨어지는 덱입니다."
+    ]
+  },
+  {
+    "id": "bold-poster",
+    "name": "대형 포스터 (Bold Poster)",
+    "color": "light",
+    "formality": "neutral",
+    "url": "https://airoasting.github.io/slide_library/templates/bold-poster/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "대담한",
+      "에디토리얼",
+      "강렬한",
+      "당당한",
+      "브랜드 매니페스토",
+      "크리에이티브 피치",
+      "매거진 / 에디토리얼",
+      "창업자 비전 덱",
+      "큰 글씨에 빨간 포인트 하나를 더했습니다. 포스터처럼 강렬한 발표에 어울립니다."
+    ]
+  },
+  {
+    "id": "campaign-poster",
+    "name": "캠페인 포스터 (Campaign Poster)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/campaign-poster/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "액티비스트",
+      "강렬한",
+      "그래픽",
+      "솔직한",
+      "문화 비평",
+      "매니페스토",
+      "커뮤니티 / 시민 덱",
+      "캠페인 피치",
+      "크림 위에 파랑, 주황, 빨강을 얹었습니다. 캠페인, 커뮤니티 발표에 어울립니다."
+    ]
+  },
+  {
+    "id": "tri-color-magazine",
+    "name": "3색 매거진 (Tri-Color Magazine)",
+    "color": "mixed",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/tri-color-magazine/template.html",
+    "slide_count": 8,
+    "keywords": [
+      "에디토리얼",
+      "따뜻한",
+      "의도적인",
+      "무드 있는",
+      "에디토리얼 / 매거진 피치",
+      "패션 브랜드 덱",
+      "라이프스타일 미디어",
+      "아트 디렉션 리뷰",
+      "분홍, 크림, 와인색 세 가지 톤입니다. 패션, 매거진 느낌입니다."
+    ]
+  },
+  {
+    "id": "retro-magazine",
+    "name": "레트로 잡지 (Retro Magazine)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/retro-magazine/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "수공예적인",
+      "로파이",
+      "언더그라운드",
+      "웜 레트로",
+      "인디 진 / 출판물",
+      "음악·예술 브랜드",
+      "크리에이터 포트폴리오",
+      "스몰배치 / 공예 런칭",
+      "베이지 종이에 초록 포인트입니다. 인디 잡지, 수공예 느낌입니다."
+    ]
+  },
+  {
+    "id": "earth-archive",
+    "name": "흙빛 아카이브 (Earth Archive)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/earth-archive/template.html",
+    "slide_count": 11,
+    "keywords": [
+      "아카이브풍",
+      "흙 같은",
+      "촉각적인",
+      "사려 깊은",
+      "그래픽",
+      "박물관·문화 기관",
+      "예술·건축 브랜드",
+      "롱폼 리서치",
+      "헤리티지·공예 브랜드",
+      "흙빛 6색 팔레트에 스텐실 글씨입니다. 박물관, 공예 브랜드에 어울립니다."
+    ]
+  },
+  {
+    "id": "sunshine-yellow",
+    "name": "선샤인 옐로 (Sunshine Yellow)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/sunshine-yellow/template.html",
+    "slide_count": 8,
+    "keywords": [
+      "에디토리얼",
+      "분위기 있는",
+      "따뜻한",
+      "문화 기관",
+      "포스터적",
+      "전시 / 비엔날레",
+      "예술 기관 프로그램",
+      "디자인·타이포 콘퍼런스",
+      "문학·큐레이션 출판물",
+      "따뜻한 종이 위 노란 햇살 톤입니다. 전시, 문화 행사에 어울립니다."
+    ]
+  },
+  {
+    "id": "pin-note",
+    "name": "핀 노트 (Pin Note)",
+    "color": "light",
+    "formality": "neutral",
+    "url": "https://airoasting.github.io/slide_library/templates/pin-note/template.html",
+    "slide_count": 11,
+    "keywords": [
+      "수공예적인",
+      "핸드메이드",
+      "따뜻한",
+      "사색적인",
+      "문학적인",
+      "개성 있는 리서치 결과",
+      "정성 리포트",
+      "창업자 회고",
+      "크리에이터 에세이 덱",
+      "노란 종이에 핀 그림과 손글씨를 얹었습니다. 정성 들인 수공예 느낌입니다."
+    ]
+  },
+  {
+    "id": "night-pink",
+    "name": "나이트 핑크 (Night Pink)",
+    "color": "dark",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/night-pink/template.html",
+    "slide_count": 9,
+    "keywords": [
+      "밤의",
+      "무드 있는",
+      "의도적인",
+      "럭스",
+      "표현적인",
+      "패션 브랜드 덱",
+      "크리에이터 퍼스널 브랜드",
+      "나이트라이프·주류·데이팅 제품",
+      "럭셔리 런칭",
+      "검정 배경에 핫핑크 포인트입니다. 세련되고 럭셔리한 느낌입니다."
+    ]
+  },
+  {
+    "id": "forest-green",
+    "name": "숲속 그린 (Forest Green)",
+    "color": "mixed",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/forest-green/template.html",
+    "slide_count": 12,
+    "keywords": [
+      "유기적인",
+      "사려 깊은",
+      "따뜻한",
+      "문학적인",
+      "자연적인",
+      "지속가능성 브랜드",
+      "웰니스 브랜드",
+      "아웃도어 / 자연 제품",
+      "와이너리·레스토랑",
+      "짙은 초록 배경에 크림색 글자입니다. 자연, 웰니스 브랜드에 어울립니다."
+    ]
+  },
+  {
+    "id": "coral",
+    "name": "다크 코랄 (Dark Coral)",
+    "color": "mixed",
+    "formality": "neutral",
+    "url": "https://airoasting.github.io/slide_library/templates/coral/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "대담한",
+      "따뜻한",
+      "모던",
+      "당당한",
+      "패션·뷰티 피치",
+      "피트니스 브랜드",
+      "F&B 브랜드 덱",
+      "라이프스타일 런칭",
+      "어두운 배경에 산호색과 크림을 더했습니다. 패션, 라이프스타일에 어울립니다."
+    ]
+  },
+  {
+    "id": "olive-modern",
+    "name": "올리브 모던 (Olive Modern)",
+    "color": "mixed",
+    "formality": "neutral",
+    "url": "https://airoasting.github.io/slide_library/templates/olive-modern/template.html",
+    "slide_count": 9,
+    "keywords": [
+      "웜 모던",
+      "사려 깊은",
+      "촉각적인",
+      "미드센추리",
+      "디자인 스튜디오 크레덴셜",
+      "건축·인테리어 브랜드",
+      "세라믹·공예 브랜드",
+      "올리브색 배경에 크림과 주황 포인트입니다. 건축, 인테리어, 공예 브랜드에 어울립니다."
+    ]
+  },
+  {
+    "id": "warm-cream",
+    "name": "따뜻한 크림 (Warm Cream)",
+    "color": "light",
+    "formality": "neutral",
+    "url": "https://airoasting.github.io/slide_library/templates/warm-cream/template.html",
+    "slide_count": 8,
+    "keywords": [
+      "따뜻한",
+      "친밀한",
+      "모던",
+      "다정한",
+      "스몰배치",
+      "사교적인",
+      "호스피탈리티",
+      "서퍼 클럽·디너 시리즈",
+      "이벤트·커뮤니티 모임",
+      "스몰 호스피탈리티·레스토랑 브랜드",
+      "크림색 배경에 벽돌색 포인트입니다. 모임, 레스토랑, 이벤트에 어울립니다."
+    ]
+  },
+  {
+    "id": "peach-tone",
+    "name": "복숭아 톤 (Peach Tone)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/peach-tone/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "따뜻한",
+      "친근한",
+      "인디",
+      "다정한",
+      "크리에이터 포트폴리오",
+      "인디 제품 런칭",
+      "라이프스타일 브랜드",
+      "스몰 비즈니스 피치",
+      "복숭아색 배경에 다정한 느낌입니다. 소규모 브랜드, 크리에이터에 어울립니다."
+    ]
+  },
+  {
+    "id": "pastel-card",
+    "name": "파스텔 카드 (Pastel Card)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/pastel-card/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "유쾌한",
+      "모던",
+      "따뜻한",
+      "산뜻한",
+      "즐거운",
+      "라이프스타일 브랜드",
+      "크리에이터 포트폴리오",
+      "DTC 제품 런칭",
+      "뷰티·웰니스 피치",
+      "둥근 카드 모양에 파스텔 팝 색상입니다. 밝고 귀여운 느낌입니다."
+    ]
+  },
+  {
+    "id": "black-yellow",
+    "name": "블랙 옐로 (Black Yellow)",
+    "color": "dark",
+    "formality": "neutral",
+    "url": "https://airoasting.github.io/slide_library/templates/black-yellow/template.html",
+    "slide_count": 12,
+    "keywords": [
+      "일렉트릭",
+      "대담한",
+      "그래픽",
+      "디자인 주도",
+      "고대비",
+      "디자인 스튜디오 크레덴셜",
+      "에이전시 피치",
+      "브랜드 쇼케이스",
+      "패션·스니커 브랜드",
+      "검정 배경에 노란 글자입니다. 강렬하고 대비가 높은 디자인 스튜디오 느낌입니다."
+    ]
+  },
+  {
+    "id": "neon-yellow",
+    "name": "형광 옐로 (Neon Yellow)",
+    "color": "light",
+    "formality": "neutral",
+    "url": "https://airoasting.github.io/slide_library/templates/neon-yellow/template.html",
+    "slide_count": 13,
+    "keywords": [
+      "당당한",
+      "강렬한",
+      "에디토리얼",
+      "모던",
+      "제품 런칭",
+      "디자인 리뷰",
+      "창업자 피치",
+      "브랜드 덱",
+      "흰 종이에 형광 노랑 포인트 하나를 더했습니다. 강렬하고 모던한 느낌입니다."
+    ]
+  },
+  {
+    "id": "soft-neumorph",
+    "name": "소프트 뉴모피즘 (Soft Neumorph)",
+    "color": "light",
+    "formality": "formal",
+    "url": "https://airoasting.github.io/slide_library/templates/soft-neumorph/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "부드러운",
+      "촉각적인",
+      "현대적인",
+      "정제된",
+      "디지털",
+      "프로덕트 디자인 리뷰",
+      "디자인 시스템 발표",
+      "테크 제품 런칭",
+      "UX 리서치 공유",
+      "스타트업 피치",
+      "부드러운 블루-그레이 캔버스에 양각·음각 그림자로 깊이를 표현한 촉각형 디자인입니다."
+    ]
+  },
+  {
+    "id": "color-block",
+    "name": "컬러 블록 (Color Block)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/color-block/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "대담한",
+      "유쾌한",
+      "그래픽",
+      "산뜻한",
+      "크리에이티브 에이전시 피치",
+      "인디 SaaS 런칭",
+      "디자이너 포트폴리오",
+      "브랜드 리디자인",
+      "파스텔 컬러 블록에 굵은 검정 테두리입니다. 산뜻하고 대담한 느낌입니다."
+    ]
+  },
+  {
+    "id": "colorful-creative",
+    "name": "알록달록 크리에이티브 (Colorful Creative)",
+    "color": "light",
+    "formality": "neutral",
+    "url": "https://airoasting.github.io/slide_library/templates/colorful-creative/template.html",
+    "slide_count": 8,
+    "keywords": [
+      "크리에이티브",
+      "당당한",
+      "유쾌한",
+      "디자인 주도",
+      "크리에이티브 에이전시 피치",
+      "디자인 스튜디오 덱",
+      "광고 회사 크레덴셜",
+      "브랜드 크리에이티브 리뷰",
+      "크림 배경에 초록·분홍·주황·노랑을 두루 썼습니다. 밝고 활기찬 느낌입니다."
+    ]
+  },
+  {
+    "id": "rough-grid",
+    "name": "거친 그리드 (Rough Grid)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/rough-grid/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "거친",
+      "강렬한",
+      "에너제틱",
+      "당당한",
+      "스타트업 피치",
+      "액셀러레이터 데모데이",
+      "창업자 피치",
+      "인디 제품 런칭",
+      "두꺼운 테두리와 그림자가 특징입니다. 분홍, 초록, 잉크색으로 에너지가 넘칩니다."
+    ]
+  },
+  {
+    "id": "postit-board",
+    "name": "포스트잇 보드 (Post-it Board)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/postit-board/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "유쾌한",
+      "크리에이티브",
+      "따뜻한",
+      "의도된 흐트러짐",
+      "워크숍",
+      "브레인스토밍 / 워크숍",
+      "에이전시 크레덴셜",
+      "디자인 씽킹 세션",
+      "아이데이션 피치",
+      "파스텔 포스트잇과 손글씨가 특징입니다. 브레인스토밍, 워크숍에 어울립니다."
+    ]
+  },
+  {
+    "id": "neon-pixel",
+    "name": "네온 픽셀 (Neon Pixel)",
+    "color": "dark",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/neon-pixel/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "레트로 테크",
+      "유쾌한",
+      "사이버펑크",
+      "에너제틱",
+      "게이밍 피치",
+      "해커톤 데모",
+      "Web3 / 크립토 덱",
+      "인디 제품 런칭",
+      "어두운 우주 배경에 네온 픽셀 아트입니다. 게임 느낌의 발표에 어울립니다."
+    ]
+  },
+  {
+    "id": "windows-95",
+    "name": "윈도우 95 (Windows 95)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/windows-95/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "노스탤지어",
+      "레트로",
+      "긱",
+      "유쾌한",
+      "레트로 게이밍 피치",
+      "Y2K 브랜드",
+      "90년대 무드 크리에이터 포트폴리오",
+      "테크 역사 토크",
+      "90년대 윈도우 그대로입니다. 회색 창과 픽셀 글꼴까지 완벽한 복고입니다."
+    ]
+  },
+  {
+    "id": "retro-cassette",
+    "name": "레트로 카세트 (Retro Cassette)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/retro-cassette/template.html",
+    "slide_count": 8,
+    "keywords": [
+      "레트로",
+      "유쾌한",
+      "카와이 테크",
+      "따뜻한",
+      "촉각적인",
+      "제품 런칭·카탈로그",
+      "인디 하드웨어·아날로그 스튜디오 브랜드",
+      "음악 레이블 릴리스 스케줄",
+      "옛날 카세트 포장 느낌입니다. 크림 종이에 무지개 리본을 둘렀습니다."
+    ]
+  },
+  {
+    "id": "floral-pastel",
+    "name": "꽃그림 파스텔 (Floral Pastel)",
+    "color": "light",
+    "formality": "casual",
+    "url": "https://airoasting.github.io/slide_library/templates/floral-pastel/template.html",
+    "slide_count": 10,
+    "keywords": [
+      "명랑한",
+      "유쾌한",
+      "따뜻한",
+      "화창한",
+      "건강한",
+      "교육 / 교실",
+      "어린이 제품 런칭",
+      "웰니스 프로그램",
+      "커뮤니티 워크숍",
+      "꽃, 별, 무지개 손그림이 어우러진 파스텔 덱입니다. 교육, 어린이 콘텐츠에 잘 맞습니다."
+    ]
+  }
+]
