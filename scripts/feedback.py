@@ -6,7 +6,6 @@ but no content.
 from __future__ import annotations
 
 import urllib.parse
-from pathlib import Path
 
 from .telemetry import get_or_create_user_id
 

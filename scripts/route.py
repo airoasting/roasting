@@ -8,7 +8,6 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
 
 from .llm_judge import HaikuJudge, JudgeFn
 

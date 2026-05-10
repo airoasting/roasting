@@ -7,7 +7,7 @@ from pathlib import Path
 import yaml
 
 
-def parse_fm(text: str) -> dict:
+def parse_fm(text: str) -> dict:  # type: ignore[type-arg]
     if not text.startswith("---"):
         return {}
     end = text.find("\n---", 3)
@@ -19,7 +19,7 @@ def main() -> None:
     ap.add_argument("--cases", required=True, type=Path)
     ap.add_argument("--out", required=True, type=Path)
     args = ap.parse_args()
-    by_cat: dict[str, list[dict]] = {}
+    by_cat: dict[str, list[dict]] = {}  # type: ignore[type-arg]
     for p in sorted(args.cases.glob("p*.md")):
         fm = parse_fm(p.read_text(encoding="utf-8"))
         by_cat.setdefault(fm.get("category", "기타"), []).append(fm)

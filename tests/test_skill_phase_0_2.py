@@ -7,7 +7,6 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import pytest
 
 
 SKILL = Path("skills/roasting/SKILL.md")

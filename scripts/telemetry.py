@@ -42,7 +42,7 @@ class TelemetryEvent:
 def _load_config() -> dict[str, Any]:
     if not CONFIG_PATH.exists():
         return {}
-    return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))  # type: ignore[no-any-return]
 
 
 def _save_config(cfg: dict[str, Any]) -> None:
@@ -51,7 +51,7 @@ def _save_config(cfg: dict[str, Any]) -> None:
 
 
 def is_enabled() -> bool:
-    return _load_config().get("telemetry", False)
+    return _load_config().get("telemetry", False)  # type: ignore[no-any-return]
 
 
 def get_or_create_user_id() -> str:
@@ -59,7 +59,7 @@ def get_or_create_user_id() -> str:
     if "user_id" not in cfg:
         cfg["user_id"] = str(uuid.uuid4())
         _save_config(cfg)
-    return cfg["user_id"]
+    return cfg["user_id"]  # type: ignore[no-any-return]
 
 
 def send(event: TelemetryEvent, client: Client | None = None) -> None:

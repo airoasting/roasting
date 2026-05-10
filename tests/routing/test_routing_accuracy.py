@@ -4,8 +4,6 @@ Marked --slow because it calls Haiku 189 times (~$1 per full run).
 """
 from __future__ import annotations
 
-import os
-from pathlib import Path
 
 import pytest
 
@@ -32,7 +30,7 @@ def test_routing_accuracy_gate(phrasings, index_md):
     print(f"Top-1 accuracy: {successes}/{total} = {successes/total:.3f} "
           f"(Wilson 95% LB = {lower:.3f})")
     if misses:
-        print(f"\nFirst 10 misses:")
+        print("\nFirst 10 misses:")
         for phrasing, expected, got in misses[:10]:
             print(f"  '{phrasing}' -> expected={expected}, got={got}")
     assert lower >= 0.90, (

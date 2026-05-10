@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 import os
 from dataclasses import dataclass
-from typing import Any, Callable, Protocol
+from typing import Any, Protocol
 
 import requests
 from anthropic import Anthropic
@@ -25,7 +25,7 @@ def _extract_json(text: str) -> dict[str, Any]:
     # Find the first { ... } block in case there's leading/trailing prose.
     start = t.find("{")
     if start == -1:
-        return json.loads(t)  # will raise JSONDecodeError with clear message
+        return json.loads(t)  # type: ignore[no-any-return]  # will raise JSONDecodeError with clear message
     # Walk to find matching closing brace.
     depth = 0
     for i, ch in enumerate(t[start:], start):
@@ -34,8 +34,8 @@ def _extract_json(text: str) -> dict[str, Any]:
         elif ch == "}":
             depth -= 1
             if depth == 0:
-                return json.loads(t[start:i + 1])
-    return json.loads(t[start:])  # fallback — let json module raise
+                return json.loads(t[start:i + 1])  # type: ignore[no-any-return]
+    return json.loads(t[start:])  # type: ignore[no-any-return]  # fallback — let json module raise
 
 
 class JudgeFn(Protocol):

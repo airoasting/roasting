@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from pathlib import Path
 
 from scripts.install_hook import install, MARKER_BEGIN, MARKER_END
 
