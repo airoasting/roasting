@@ -174,14 +174,44 @@ def _parse_entry(case_id: str, entry_body: str) -> Case:
     )
 
 
+def _read_existing_enrich(path: Path) -> str | None:
+    """If the existing case .md has an enrich: block, return it as a YAML snippet."""
+    if not path.exists():
+        return None
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---"):
+        return None
+    end = text.find("\n---", 3)
+    if end < 0:
+        return None
+    fm = text[3:end]
+    # Simple line-based extraction: capture from "enrich:" to next top-level key
+    lines = fm.splitlines()
+    capturing = False
+    out: list[str] = []
+    for line in lines:
+        if line.startswith("enrich:"):
+            capturing = True
+            out.append(line)
+            continue
+        if capturing:
+            if line and not line.startswith(("  ", "-", "\t")):
+                # Hit next top-level key
+                break
+            out.append(line)
+    return "\n".join(out) if out else None
+
+
 def write_case_files(cases: list[Case], out_dir: Path) -> None:
     """Write one .md per case with YAML frontmatter + body."""
     for case in cases:
         path = out_dir / f"{case.id}.md"
-        path.write_text(_render_case(case), encoding="utf-8")
+        existing_enrich = _read_existing_enrich(path)
+        path.write_text(_render_case(case, existing_enrich=existing_enrich), encoding="utf-8")
 
 
-def _render_case(c: Case) -> str:
+def _render_case(c: Case, existing_enrich: str | None = None) -> str:
+    enrich_block = f"{existing_enrich}\n" if existing_enrich else ""
     fm = (
         "---\n"
         f"id: {c.id}\n"
@@ -190,6 +220,7 @@ def _render_case(c: Case) -> str:
         f'title: "{c.title}"\n'
         f'subhead: "{_yaml_escape(c.subhead)}"\n'
         "tier: beta\n"
+        f"{enrich_block}"
         "---\n\n"
     )
     body = (
