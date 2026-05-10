@@ -943,5 +943,35 @@
     "case_id": "p9",
     "phrasing": "화가 누그러지지 않던 CS 답장, 다섯 사람이 인정·조치·후속이 한 호흡에 들어오게 같이 엮어드립니다.",
     "intent_tag": "audience_clue"
+  },
+  {
+    "case_id": "p73",
+    "phrasing": "삼성전자 분기 실적 1페이지로 정리해줘",
+    "intent_tag": "natural_intent"
+  },
+  {
+    "case_id": "p73",
+    "phrasing": "DART 기반 회사 분석 리포트",
+    "intent_tag": "direct_keyword"
+  },
+  {
+    "case_id": "p73",
+    "phrasing": "PM 미팅 전 1페이지 회사 진단",
+    "intent_tag": "audience_clue"
+  },
+  {
+    "case_id": "p74",
+    "phrasing": "신사업 검토할 때 어떤 프레임워크 써야 할까",
+    "intent_tag": "natural_intent"
+  },
+  {
+    "case_id": "p74",
+    "phrasing": "전략 프레임워크 적용 메모",
+    "intent_tag": "direct_keyword"
+  },
+  {
+    "case_id": "p74",
+    "phrasing": "CEO에게 보낼 1on1 결정 메모",
+    "intent_tag": "audience_clue"
   }
 ]
