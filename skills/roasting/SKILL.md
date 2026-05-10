@@ -52,13 +52,69 @@ description: 화이트칼라 산출물(이메일·보고서·PPT·계약서·이
 
 ### Phase 3 — BLACK DRAFT (Producer)
 
-> **구현은 PR 8에서 채움.** v0.1 빌드 진행 중 stub:
->
-> 메인 Claude가 `agents/roasting-black.md` 정의를 system prompt로 주입한 채 직접 작성.
+목적: 케이스 BLACK 페르소나 캐스팅으로 산출물 1차 작성.
 
-### Phase 4 — ANTI-PATTERN CHECK
+호출 방식 (메인 Claude가 직접 수행):
 
-> **구현은 PR 8에서 채움.** stub: `scripts.anti_patterns.detect_all` 호출, 검출 시 BLACK 재작성, 3-strikes 보호.
+```
+Agent(
+  subagent_type="general-purpose",   # roasting-black.md를 system prompt로 주입
+  description="BLACK draft for {case_id} round {n}",
+  prompt=f"""
+You are following agents/roasting-black.md. Use the case persona from
+references/cases/{case_id}.md (BLACK section) as your character casting.
+
+Inputs:
+- xxxxx: {user_xxxxx}
+- 케이스 정의 (전문): {case_md_content}
+- 슬라이드 템플릿 (PPT만): {slide_meta_json}
+- 이전 라운드 RGSB 코멘트 (Round 2+): {prev_critiques_md}
+
+산출물 작성. Markdown 또는 HTML. 자평·메타 코멘트 금지.
+출력 위치: _workspace/{session}/round-{n}/black-draft.{ext}
+"""
+)
+```
+
+산출물 저장 후 Phase 4로.
+
+### Phase 4 — ANTI-PATTERN CHECK (Self-correction loop)
+
+목적: BLACK 산출물의 5종 안티패턴 검출 → 발견 시 BLACK 재작성 (라운드 카운트 안 깎임). 3-strikes 보호.
+
+처리:
+1. `scripts.anti_patterns.detect_all` 호출:
+   ```python
+   detected = detect_all(
+       black_output=draft_text,
+       case_id=case.id,
+       case_category=case.category,
+       case_black_tone=case.black_tone,
+       case_gold_scenario=case.gold_scenario,
+       user_xxxxx=xxxxx,
+       judge=HaikuJudge(),
+   )
+   ```
+2. detected가 비어있으면 → Phase 5로.
+3. 검출된 각 안티패턴마다 `StrikeCounter.record(name)` 호출:
+   - `ConsecutiveAntiPatternError` 발생 (3-strikes) → 사용자 보고:
+     ```
+     [{pattern_name}] 안티패턴이 3회 연속 검출되었습니다.
+     해소가 어렵습니다. 어떻게 할까요?
+     (1) 진행 (강제 통과)
+     (2) 중단
+     (3) 케이스 재선택
+     ```
+4. 3-strikes 미달 시 → BLACK 재호출, prompt에 재작성 지시 추가:
+   ```
+   직전 산출물에서 다음 안티패턴이 검출되었습니다:
+   - {ap.name}: {ap.detail}
+   
+   재작성하세요. 라운드 카운트는 변동 없습니다.
+   ```
+5. 수정된 산출물로 다시 Phase 4 → 통과 시 Phase 5.
+
+`anti-patterns.json` 저장: `{detected_iterations: [[...], [...]], final: []}`
 
 ### Phase 5 — RGSB REVIEW (Agent Teams)
 
