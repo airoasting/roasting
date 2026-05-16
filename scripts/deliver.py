@@ -37,12 +37,13 @@ def deliver(result: SessionResult) -> Path:
     output_path = final_dir / f"output.{out_ext}"
     if result.output_format == "html":
         try:
-            from .build_slide_html import build
+            from .build_slide_html import build, mode_for_case
             build(
                 index_json=Path("skills/roasting/references/slide-templates/index.json"),
                 template_id=result.slide_template_id or "",
                 black_md=final_round.black_draft_path.read_text(encoding="utf-8"),
                 output_html=output_path,
+                mode=mode_for_case(result.case_id),
             )
         except Exception as e:
             # Fallback: write output.md with warning footer.

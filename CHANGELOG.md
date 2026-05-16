@@ -4,6 +4,21 @@ This project follows [Semantic Versioning](https://semver.org/) and [Keep a Chan
 
 ## [Unreleased]
 
+### Added
+
+- **New case `p70` 웹사이트·랜딩페이지** (folio VII·3, 마케팅) — 한 화면 한 메시지·CTA 한 개 합격선의 랜딩페이지 케이스. BLACK = 그로스 마케팅·랜딩 UX 카피라이터 17년차+. RGSB는 가치제안 한 줄(RED), 정보 위계·CTA 반복(SILVER), 모바일 첫 5초 호흡(BLUE), SNS 광고 클릭 시나리오(GOLD)로 채점.
+- **`build_slide_html.py` landing 모드** — H2 단위로 BLACK Markdown을 랜딩 섹션(히어로·소셜프루프·기능·CTA·FAQ)으로 분할하고 slide_library 템플릿 컨테이너에 주입. PPT 모드(슬라이드 단위 H1)와 같은 fetch + container 로직을 공유하고 콘텐츠 블록 셰이프만 다름.
+- **`mode_for_case()` 헬퍼** + `LANDING_CASE_IDS` frozenset — case_id → builder 모드 매핑이 한 곳에 모임. 차후 HTML 산출물 케이스 확장 시 이 함수만 갱신.
+- **Phrasings 3개 추가** (p70 natural/keyword/audience) — 라우팅 테스트셋 195 → 198.
+- **단위 테스트 4개** — landing 분할, H2 미존재 폴백, mode_for_case 라우팅, build() e2e mock.
+
+### Changed
+
+- **SKILL.md Phase 2** — "PPT 카테고리" 분기를 "HTML 산출물 케이스 (p41/42/43/45/p70)"로 통합. 모든 HTML 산출물은 slide_library 35개 중 가장 적정한 1개를 그대로 베이스 HTML로 사용. 자체 디자인 생성 금지.
+- **`output-formats.md` 마케팅 행 분할** — p70은 HTML, 나머지 2개(p56·p59)는 Markdown.
+- **`scripts/deliver.py`** — `mode=mode_for_case(case_id)` 인자로 빌더 호출, 라우팅·빌드 일관.
+- **README.ko.md / plugin.json** — case count 63 → 66, "PPT 케이스" 섹션을 "HTML 산출물 케이스"로 확장.
+
 ## [0.2.0] - 2026-05-10
 
 ### Added

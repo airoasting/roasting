@@ -32,5 +32,12 @@
   {"case_id": "p25", "xxxxx": "내부 R&D 투자 제안서 (3억 규모)",
    "expected_format": "md", "min_score": 9.0},
   {"case_id": "p25", "xxxxx": "팀 분리 + 신설 조직 제안",
-   "expected_format": "md", "min_score": 9.0}
+   "expected_format": "md", "min_score": 9.0},
+
+  {"case_id": "p70", "xxxxx": "B2B SaaS 결제 모듈 랜딩페이지 (가격·연동 사례 2건·30초 데모 신청 CTA)",
+   "expected_format": "html", "min_score": 9.0},
+  {"case_id": "p70", "xxxxx": "헬스케어 D2C 런칭 랜딩페이지 (사용 전후 사례·정기구독 CTA)",
+   "expected_format": "html", "min_score": 9.0},
+  {"case_id": "p70", "xxxxx": "AI 코딩 부트캠프 랜딩 (대상·커리큘럼 3주·얼리버드 신청)",
+   "expected_format": "html", "min_score": 9.0}
 ]

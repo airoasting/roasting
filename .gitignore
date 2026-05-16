@@ -21,6 +21,9 @@ Thumbs.db
 _workspace/
 # Note: ~/.claude/roasting/ lives outside the repo (user's home dir) and is not subject to .gitignore matching.
 
+# Claude Code local settings (per-user, never committed)
+.claude/
+
 # Secrets
 .env
 .env.local

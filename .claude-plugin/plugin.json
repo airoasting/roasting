@@ -1,7 +1,7 @@
 {
   "name": "roasting",
   "version": "0.2.0",
-  "description": "5-Color Harness execution engine for Korean business leaders. Auto-routes 63 white-collar artifact cases (email, board memo, investor letter, etc.) and produces output via BLACK Producer + RGSB Reviewer team with debate-driven scoring. Korean only.",
+  "description": "5-Color Harness execution engine for Korean business leaders. Auto-routes 66 white-collar artifact cases (email, board memo, investor letter, landing page, etc.) and produces output via BLACK Producer + RGSB Reviewer team with debate-driven scoring. PPT and landing-page cases auto-bind a slide_library template. Korean only.",
   "author": {
     "name": "AI ROASTING",
     "url": "https://airoasting.github.io"
