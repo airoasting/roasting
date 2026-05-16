@@ -17,7 +17,20 @@ This project follows [Semantic Versioning](https://semver.org/) and [Keep a Chan
 - **SKILL.md Phase 2** — "PPT 카테고리" 분기를 "HTML 산출물 케이스 (p41/42/43/45/p70)"로 통합. 모든 HTML 산출물은 slide_library 35개 중 가장 적정한 1개를 그대로 베이스 HTML로 사용. 자체 디자인 생성 금지.
 - **`output-formats.md` 마케팅 행 분할** — p70은 HTML, 나머지 2개(p56·p59)는 Markdown.
 - **`scripts/deliver.py`** — `mode=mode_for_case(case_id)` 인자로 빌더 호출, 라우팅·빌드 일관.
-- **README.ko.md / plugin.json** — case count 63 → 66, "PPT 케이스" 섹션을 "HTML 산출물 케이스"로 확장.
+- **`plugin.json`** — case count 63 → 66, description에 landing-page 추가.
+
+### Documentation
+
+- **README.md / README.ko.md 전면 개편** (v2). 5-Color critique 결과를 직접 적용해 9.5 합격선 위로 끌어올림.
+  - **방법론 특성 6가지** 섹션 신설 (case별 캐스팅·GOLD는 평가자가 아닌 독자·의도적 의견 분기·9.5 숫자 합격선·사전 안티패턴 검출·66 case 자체가 IP).
+  - **다른 하네스 패턴과의 비교표** (Director-Critic·Self-Refine·Multi-Agent Debate·Constitutional AI·Producer-Reviewer·RLHF).
+  - **3-tier 합격선 표** (9.0 / 9.5 / 9.7군의 이유).
+  - **예시 산출물 + 실패 보고 박스** (한국어 본문 6줄 BLACK 출력 + 9.5 미달 시 사유 보고 샘플).
+  - **검증된 품질 지표 표** (라우팅 98.4% · false positive 0% · 101/101 tests · quality avg 9.17).
+  - **케이스별 BLACK 캐스팅 예시 표** (영문 README 미러링).
+  - 영문 README "Korean only" → "Korean cases, universal pattern"으로 reframe (글로벌 개발자에게 reference architecture로 재제시).
+  - em dash 17개 (영문 11 + 한국어 6) 모두 제거 (5-Color 자체 fail 룰 통과).
+  - 한국어판 주술 정합·번역체 제거 추가 폴리시.
 
 ## [0.2.0] - 2026-05-10
 
