@@ -36,7 +36,7 @@ def test_user_id_persisted(tmp_config):
 def test_send_noop_when_disabled(tmp_config, monkeypatch):
     fake_client = MagicMock()
     event = TelemetryEvent(
-        user_id="u", skill_version="0.1.0", case_id="p1",
+        user_id="u", skill_version="0.1.0", case_id="c1",
         final_score=9.5, round_count=1, slide_template_id=None,
         total_cost_usd=0.21, anti_patterns_detected={}, debate_triggered=False,
         completion_status="passed",
@@ -52,7 +52,7 @@ def test_send_inserts_when_enabled(tmp_config, monkeypatch):
     monkeypatch.setattr(t, "SUPABASE_ANON_KEY", "fake-key")
     fake_client = MagicMock()
     event = TelemetryEvent(
-        user_id="u", skill_version="0.1.0", case_id="p1",
+        user_id="u", skill_version="0.1.0", case_id="c1",
         final_score=9.5, round_count=1, slide_template_id=None,
         total_cost_usd=0.21, anti_patterns_detected={}, debate_triggered=False,
         completion_status="passed",
@@ -64,7 +64,7 @@ def test_send_inserts_when_enabled(tmp_config, monkeypatch):
 def test_event_has_no_forbidden_fields():
     """Schema-level guard: ensure dataclass fields don't include content."""
     event = TelemetryEvent(
-        user_id="u", skill_version="0.1.0", case_id="p1",
+        user_id="u", skill_version="0.1.0", case_id="c1",
         final_score=9.5, round_count=1, slide_template_id=None,
         total_cost_usd=0.21, anti_patterns_detected={}, debate_triggered=False,
         completion_status="passed",
@@ -74,8 +74,8 @@ def test_event_has_no_forbidden_fields():
 
 
 def test_feedback_url_includes_session(tmp_config):
-    url = build_issue_url("p1", "sess-12345678", "결과가 빠르고 정확했음")
-    assert "p1" in url
+    url = build_issue_url("c1", "sess-12345678", "결과가 빠르고 정확했음")
+    assert "c1" in url
     assert "sess-1234" in url   # truncated to first 8 chars in title
     assert "labels=beta-feedback" in url
     assert "github.com/airoasting/roasting/issues/new" in url

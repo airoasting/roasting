@@ -39,7 +39,7 @@ def test_deliver_writes_three_files(tmp_path):
     draft.write_text("# Test Output\nbody", encoding="utf-8")
     result = SessionResult(
         session_dir=session,
-        case_id="p1",
+        case_id="c1",
         case_title="이메일 (외부 비즈니스)",
         user_xxxxx="거래처에 답신 안 오는 메일",
         rounds=[
@@ -70,7 +70,7 @@ def test_deliver_writes_three_files(tmp_path):
 
 
 def test_deliver_routes_p70_through_landing_mode(tmp_path, monkeypatch):
-    """End-to-end: p70 case → deliver → build → landing mode is invoked.
+    """End-to-end: c70 case → deliver → build → landing mode is invoked.
 
     We stub the network fetch and capture the mode that deliver passes to
     build(). This guarantees the case_id → mode path stays wired up.
@@ -91,7 +91,7 @@ def test_deliver_routes_p70_through_landing_mode(tmp_path, monkeypatch):
 
     monkeypatch.setattr(bsh, "build", spy_build)
 
-    session = tmp_path / "test-session-p70"
+    session = tmp_path / "test-session-c70"
     rd1 = session / "round-1"
     rd1.mkdir(parents=True)
     draft = rd1 / "black-draft.md"
@@ -101,7 +101,7 @@ def test_deliver_routes_p70_through_landing_mode(tmp_path, monkeypatch):
     )
     result = SessionResult(
         session_dir=session,
-        case_id="p70",
+        case_id="c70",
         case_title="웹사이트·랜딩페이지",
         user_xxxxx="B2B SaaS 결제 모듈 랜딩페이지",
         rounds=[
@@ -125,7 +125,7 @@ def test_deliver_routes_p70_through_landing_mode(tmp_path, monkeypatch):
     )
     final = deliver(result)
     assert captured["mode"] == "landing", (
-        "p70 must reach build() with mode='landing'; got " + repr(captured.get("mode"))
+        "c70 must reach build() with mode='landing'; got " + repr(captured.get("mode"))
     )
     out = (final / "output.html").read_text(encoding="utf-8")
     assert "data-mode='landing'" in out

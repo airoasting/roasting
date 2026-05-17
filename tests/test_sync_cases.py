@@ -23,6 +23,6 @@ def test_sync_produces_64_cases(tmp_path: Path) -> None:
     index = out / "_index.md"
     assert index.exists()
     body = index.read_text(encoding="utf-8")
-    # Spot-check 5 expected cases incl. the two new marketing cases (p73 웹사이트, p74 이미지).
-    for marker in ["p1", "p23", "p65", "p73", "p74"]:
+    # Spot-check 5 expected cases incl. the two new marketing cases (c73 웹사이트, c74 이미지).
+    for marker in ["c1", "c23", "c65", "c73", "c74"]:
         assert f"`{marker}`" in body

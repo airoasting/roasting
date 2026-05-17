@@ -35,7 +35,7 @@ def test_output_formats_md_exists():
     p = REFS / "output-formats.md"
     assert p.exists()
     body = p.read_text(encoding="utf-8")
-    assert "p41" in body
+    assert "c41" in body
     assert "HTML" in body
 
 

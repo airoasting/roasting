@@ -5,14 +5,14 @@
 | 외부 커뮤니케이션 (이메일·사과문·보도자료 등 12개) | Markdown | |
 | 소셜미디어·글쓰기 (9개) | Markdown | |
 | 내부 커뮤니케이션 (7개) | Markdown | |
-| 분석·보고서 (13개) | Markdown | 긴 본문 OK. p75 DART 회사 분석 포함 |
-| **의사결정·전략 — PPT 4개 (p41 임원 PPT, p42 강의자료, p43 영업덱, p45 컨설팅 덱)** | **HTML — `slides` 모드 (slide_library 결합)** | 즉시 발표 가능 |
-| 의사결정·전략 — 그 외 7개 (메모·보고서·제안서, p76 전략 프레임워크 메모 포함) | Markdown | |
+| 분석·보고서 (13개) | Markdown | 긴 본문 OK. c75 DART 회사 분석 포함 |
+| **의사결정·전략 — PPT 4개 (c41 임원 PPT, c42 강의자료, c43 영업덱, c45 컨설팅 덱)** | **HTML — `slides` 모드 (slide_library 결합)** | 즉시 발표 가능 |
+| 의사결정·전략 — 그 외 7개 (메모·보고서·제안서, c76 전략 프레임워크 메모 포함) | Markdown | |
 | 법무·규제 (7개) | Markdown | |
-| **마케팅 — p70 웹사이트·랜딩페이지** | **HTML — `landing` 모드 (slide_library 템플릿 1개 그대로 사용)** | 한 페이지 자립 HTML |
-| **마케팅 — p73 웹사이트 제작** | **HTML — `direct` 모드 (BLACK이 단일 HTML 직접 작성)** | 인라인 CSS·시맨틱 마크업·반응형 |
-| 마케팅 — p74 이미지 제작 | Markdown | 7단 프롬프트 세트 (장면·구도·조명·색감·스타일·비율·네거티브) |
-| 마케팅 — 그 외 2개 (p56 카피·이름, p59 브랜드 가이드) | Markdown | |
+| **마케팅 — c70 웹사이트·랜딩페이지** | **HTML — `landing` 모드 (slide_library 템플릿 1개 그대로 사용)** | 한 페이지 자립 HTML |
+| **마케팅 — c73 웹사이트 제작** | **HTML — `direct` 모드 (BLACK이 단일 HTML 직접 작성)** | 인라인 CSS·시맨틱 마크업·반응형 |
+| 마케팅 — c74 이미지 제작 | Markdown | 7단 프롬프트 세트 (장면·구도·조명·색감·스타일·비율·네거티브) |
+| 마케팅 — 그 외 2개 (c56 카피·이름, c59 브랜드 가이드) | Markdown | |
 | 커리어·상담 (4개) | Markdown | 이력서는 v0.4에 HTML 옵션 추가 가능 |
 | **케이스 미매칭 (generic_case) + 사용자가 HTML/페이지 요청** | **HTML — `assisted` 모드 (Phase 2 §A 참조)** | generic 폴백의 HTML 빌더 |
 
@@ -22,25 +22,25 @@
 
 | 모드 | 적용 | 슬라이드 템플릿 | BLACK 자체 디자인 |
 |---|---|---|---|
-| `slides` | `html_mode: slides`인 케이스 (현행 p41·p42·p43·p45) | 35종 중 1개 자동 선택 (formality 高) | 금지 (템플릿 그대로) |
-| `landing` | `html_mode: landing`인 케이스 (현행 p70) | 35종 중 1개 자동 선택 (마케팅 색감) | 금지 (템플릿 그대로) |
-| `direct` | `html_mode: direct`인 케이스 (현행 p73) | 미사용 | 필수 (자체 디자인 시스템) |
+| `slides` | `html_mode: slides`인 케이스 (현행 c41·c42·c43·c45) | 35종 중 1개 자동 선택 (formality 高) | 금지 (템플릿 그대로) |
+| `landing` | `html_mode: landing`인 케이스 (현행 c70) | 35종 중 1개 자동 선택 (마케팅 색감) | 금지 (템플릿 그대로) |
+| `direct` | `html_mode: direct`인 케이스 (현행 c73) | 미사용 | 필수 (자체 디자인 시스템) |
 | `assisted` | generic_case + HTML 요청 / `html_mode: assisted`인 케이스 | 35종 중 1개 자동 선택 | **베이스 위에 콘텐츠·인터랙션 보강 허용** |
 
-### `slides` 모드 — PPT 4종 (p41/42/43/45)
+### `slides` 모드 — PPT 4종 (c41/42/43/45)
 
 - 외부: slide_library의 선택된 템플릿 HTML 그대로
 - 콘텐츠 주입: 템플릿의 슬라이드 영역에 BLACK 산출물 삽입 (H1 단위, fallback H2)
 - 출력: 단일 `.html` 파일, 브라우저로 발표 가능, PDF 익스포트 가능
 - BLACK 자체 디자인 시스템 생성 금지
 
-### `landing` 모드 — p70 웹사이트·랜딩페이지
+### `landing` 모드 — c70 웹사이트·랜딩페이지
 
 - 외부: slide_library 35개 템플릿 중 **톤·formality·color로 가장 적정한 1개를 그대로 사용** (PPT와 동일 선택 흐름). 자체 디자인 생성 금지.
 - BLACK 산출물의 섹션(히어로·소셜프루프·기능·증거·CTA·FAQ·푸터)을 템플릿의 슬라이드 컨테이너에 H2 단위로 순서대로 주입.
 - 출력: 단일 `.html` 파일, 모바일 반응형, CTA 동일 라벨·색.
 
-### `direct` 모드 — p73 웹사이트 제작
+### `direct` 모드 — c73 웹사이트 제작
 
 - 외부 템플릿 사용 안 함. BLACK이 단일 HTML 파일을 처음부터 직접 작성.
 - 인라인 CSS, 시맨틱 마크업(`h1` 1개·섹션별 `h2`·`alt` 필수), 반응형, WCAG 2.1 AA 대비 4.5:1.

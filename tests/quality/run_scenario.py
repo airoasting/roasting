@@ -515,7 +515,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Run one /roasting quality scenario")
-    parser.add_argument("case_id", help="Case ID, e.g. p1")
+    parser.add_argument("case_id", help="Case ID, e.g. c1")
     parser.add_argument("xxxxx", help="User input, e.g. '거래처 부장에게 메일'")
     args = parser.parse_args()
 

@@ -75,9 +75,9 @@ def test_landing_sections_fallback_when_no_h2():
 
 
 def test_mode_for_case_routes_p70_to_landing():
-    assert bsh.mode_for_case("p70") == "landing"
-    assert bsh.mode_for_case("p41") == "slides"
-    assert bsh.mode_for_case("p1") == "slides"
+    assert bsh.mode_for_case("c70") == "landing"
+    assert bsh.mode_for_case("c41") == "slides"
+    assert bsh.mode_for_case("c1") == "slides"
 
 
 def test_build_passes_mode_to_correct_splitter(monkeypatch, tmp_path):

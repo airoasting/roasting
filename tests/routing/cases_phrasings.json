@@ -1,1021 +1,1021 @@
 [
   {
-    "case_id": "p1",
+    "case_id": "c1",
     "phrasing": "이메일 (외부 비즈니스) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p1",
+    "case_id": "c1",
     "phrasing": "이메일 (외부 비즈니스)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p1",
+    "case_id": "c1",
     "phrasing": "답이 안 오던 거래처 메일, 다섯 사람이 미리보기 두 줄로 답이 정해지게 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p10",
+    "case_id": "c10",
     "phrasing": "비전·미션 선언문 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p10",
+    "case_id": "c10",
     "phrasing": "비전·미션 선언문",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p10",
+    "case_id": "c10",
     "phrasing": "회의실 바깥을 못 넘어가던 미션 한 줄, 다섯 사람이 다음 날 동기가 인용할 문장으로 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p11",
+    "case_id": "c11",
     "phrasing": "링크드인 포스트 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p11",
+    "case_id": "c11",
     "phrasing": "링크드인 포스트",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p11",
+    "case_id": "c11",
     "phrasing": "첫 3줄에서 닫히던 링크드인 글, 다섯 사람이 후크와 단언으로 끝까지 읽히게 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p12",
+    "case_id": "c12",
     "phrasing": "SNS 포스트 (페북·쓰레드·X) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p12",
+    "case_id": "c12",
     "phrasing": "SNS 포스트 (페북·쓰레드·X)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p12",
+    "case_id": "c12",
     "phrasing": "한 줄에서 손가락이 멈추는 SNS 포스트, 다섯 사람이 한 호흡 한 메시지로 같이 풀어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p14",
+    "case_id": "c14",
     "phrasing": "블로그 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p14",
+    "case_id": "c14",
     "phrasing": "블로그",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p14",
+    "case_id": "c14",
     "phrasing": "주장이 흐려져 끝까지 못 읽히던 블로그 글, 다섯 사람이 한 편에 주장 하나로 같이 좁혀드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p15",
+    "case_id": "c15",
     "phrasing": "신문 칼럼 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p15",
+    "case_id": "c15",
     "phrasing": "신문 칼럼",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p15",
+    "case_id": "c15",
     "phrasing": "사회 함의 한 줄까지 닿지 않던 신문 칼럼, 다섯 사람이 시의성과 논증으로 같이 엮어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p16",
+    "case_id": "c16",
     "phrasing": "사내 공지 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p16",
+    "case_id": "c16",
     "phrasing": "사내 공지",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p16",
+    "case_id": "c16",
     "phrasing": "한 번에 안 읽혀 같은 질문이 반복되던 사내 공지, 다섯 사람이 결정 한 줄과 배경 한 단락으로 같이 정리해",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p18",
+    "case_id": "c18",
     "phrasing": "채용 공고 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p18",
+    "case_id": "c18",
     "phrasing": "채용 공고",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p18",
+    "case_id": "c18",
     "phrasing": "5분 만에 페이지를 닫게 하던 채용 공고, 다섯 사람이 회사 한 줄과 역할 한 줄로 같이 살려드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p19",
+    "case_id": "c19",
     "phrasing": "어려운 메시지 (거절·계약 종료) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p19",
+    "case_id": "c19",
     "phrasing": "어려운 메시지 (거절·계약 종료)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p19",
+    "case_id": "c19",
     "phrasing": "보내고 나서도 답신을 두려워하던 거절 메시지, 다섯 사람이 거리와 존중의 균형으로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p2",
+    "case_id": "c2",
     "phrasing": "사과문 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p2",
+    "case_id": "c2",
     "phrasing": "사과문",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p2",
+    "case_id": "c2",
     "phrasing": "진심이 의심받기 시작한 회사 사과문, 다섯 사람이 첫 줄에 회사 주어와 책임 동사가 박히게 같이 잡아드립니다",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p20",
+    "case_id": "c20",
     "phrasing": "타운홀·전사 메시지 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p20",
+    "case_id": "c20",
     "phrasing": "타운홀·전사 메시지",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p20",
+    "case_id": "c20",
     "phrasing": "끝나고 한 줄로 정리되지 않던 타운홀, 다섯 사람이 다음 분기 방향이 인용되게 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p21",
+    "case_id": "c21",
     "phrasing": "HR 정책 발표 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p21",
+    "case_id": "c21",
     "phrasing": "HR 정책 발표",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p21",
+    "case_id": "c21",
     "phrasing": "자기 적용 여부가 모호해 문의가 쏟아지던 정책 발표, 다섯 사람이 중립적 어휘로 같이 정리해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p22",
+    "case_id": "c22",
     "phrasing": "정기 1on1 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p22",
+    "case_id": "c22",
     "phrasing": "정기 1on1",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p22",
+    "case_id": "c22",
     "phrasing": "의제도 결론도 매번 흐려지던 정기 1on1, 다섯 사람이 지난 약속과 다음으로 같이 엮어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p23",
+    "case_id": "c23",
     "phrasing": "보고서 (실무, 1페이지) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p23",
+    "case_id": "c23",
     "phrasing": "보고서 (실무, 1페이지)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p23",
+    "case_id": "c23",
     "phrasing": "30초 안에 결정이 안 나오던 한 장 보고서, 다섯 사람이 액션 타이틀과 So what으로 같이 잡아드립니다",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p25",
+    "case_id": "c25",
     "phrasing": "기획안·제안서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p25",
+    "case_id": "c25",
     "phrasing": "기획안·제안서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p25",
+    "case_id": "c25",
     "phrasing": "결재가 자꾸 미뤄지던 기획안, 다섯 사람이 한 줄 요약과 실행 계획으로 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p26",
+    "case_id": "c26",
     "phrasing": "영업 제안서·RFP 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p26",
+    "case_id": "c26",
     "phrasing": "영업 제안서·RFP",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p26",
+    "case_id": "c26",
     "phrasing": "첫 3페이지에서 평가 위원의 마음이 정해지는 영업 제안서, 다섯 사람이 차별성 한 줄로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p27",
+    "case_id": "c27",
     "phrasing": "회의록 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p27",
+    "case_id": "c27",
     "phrasing": "회의록",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p27",
+    "case_id": "c27",
     "phrasing": "다음 날이면 누가 무엇을 하기로 했는지 흐릿하던 회의록, 다섯 사람이 결정·할 일·보류로 같이 정리해 드립니",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p28",
+    "case_id": "c28",
     "phrasing": "이사회 보고서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p28",
+    "case_id": "c28",
     "phrasing": "이사회 보고서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p28",
+    "case_id": "c28",
     "phrasing": "결정 요청이 흐려진 채 끝나던 이사회 보고, 다섯 사람이 자신감과 겸손의 균형으로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p29",
+    "case_id": "c29",
     "phrasing": "주주 서한 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p29",
+    "case_id": "c29",
     "phrasing": "주주 서한",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p29",
+    "case_id": "c29",
     "phrasing": "다음 분기의 신뢰가 결정되는 주주 서한 한 통, 다섯 사람이 메시지의 무게를 같이 실어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p3",
+    "case_id": "c3",
     "phrasing": "위기 대응 메시지 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p3",
+    "case_id": "c3",
     "phrasing": "위기 대응 메시지",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p3",
+    "case_id": "c3",
     "phrasing": "사고 발생 두 시간 안에 잡아야 할 회사 입장, 다섯 사람이 첫 줄에 흔들림 없이 같이 정해드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p30",
+    "case_id": "c30",
     "phrasing": "PRD (제품요구사항문서) 작성 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p30",
+    "case_id": "c30",
     "phrasing": "PRD (제품요구사항문서) 작성",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p30",
+    "case_id": "c30",
     "phrasing": "읽고도 작업이 시작되지 않던 PRD, 다섯 사람이 사용자 문제와 측정 지표로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p31",
+    "case_id": "c31",
     "phrasing": "IR·실적 발표 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p31",
+    "case_id": "c31",
     "phrasing": "IR·실적 발표",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p31",
+    "case_id": "c31",
     "phrasing": "헤드라인 한 줄에서 분기 평가가 갈리는 IR 발표, 다섯 사람이 분기 비교까지 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p32",
+    "case_id": "c32",
     "phrasing": "OKR·KPI 정기 리포트 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p32",
+    "case_id": "c32",
     "phrasing": "OKR·KPI 정기 리포트",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p32",
+    "case_id": "c32",
     "phrasing": "5분 안에 다음 분기 우선순위가 정해지는 OKR 리포트, 다섯 사람이 목표·실측·격차로 같이 정리해 드립니다",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p33",
+    "case_id": "c33",
     "phrasing": "분기 실적 리뷰 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p33",
+    "case_id": "c33",
     "phrasing": "분기 실적 리뷰",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p33",
+    "case_id": "c33",
     "phrasing": "변동 원인이 모델에 반영되지 않던 분기 리뷰, 다섯 사람이 정량과 정성을 같이 엮어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p34",
+    "case_id": "c34",
     "phrasing": "투자 메모 (IC Memo) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p34",
+    "case_id": "c34",
     "phrasing": "투자 메모 (IC Memo)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p34",
+    "case_id": "c34",
     "phrasing": "투자 결정 한 줄까지 닿지 않던 IC 메모, 다섯 사람이 다섯 단으로 같이 정리해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p35",
+    "case_id": "c35",
     "phrasing": "LP 리포트 (펀드 업데이트) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p35",
+    "case_id": "c35",
     "phrasing": "LP 리포트 (펀드 업데이트)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p35",
+    "case_id": "c35",
     "phrasing": "다음 출자 결정이 흔들리던 LP 분기 메시지, 다섯 사람이 자신감과 겸손을 같이 실어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p37",
+    "case_id": "c37",
     "phrasing": "산업·시장 분석 리포트 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p37",
+    "case_id": "c37",
     "phrasing": "산업·시장 분석 리포트",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p37",
+    "case_id": "c37",
     "phrasing": "한 번 보고 포지션이 안 잡히던 산업 분석, 다섯 사람이 변화의 인사이트와 승자·패자를 같이 그려드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p38",
+    "case_id": "c38",
     "phrasing": "전문가 콜 노트 (Expert Call) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p38",
+    "case_id": "c38",
     "phrasing": "전문가 콜 노트 (Expert Call)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p38",
+    "case_id": "c38",
     "phrasing": "다음 액션이 떨어지지 않던 전문가 콜 노트, 다섯 사람이 질문·답·후속으로 같이 정리해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p39",
+    "case_id": "c39",
     "phrasing": "스토리라인 잡기 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p39",
+    "case_id": "c39",
     "phrasing": "스토리라인 잡기",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p39",
+    "case_id": "c39",
     "phrasing": "5분 안에 스토리라인이 잡히지 않던 자료, 다섯 사람이 결론 한 줄로 같이 좁혀드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p4",
+    "case_id": "c4",
     "phrasing": "보도자료 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p4",
+    "case_id": "c4",
     "phrasing": "보도자료",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p4",
+    "case_id": "c4",
     "phrasing": "받은편지함에서 30초 안에 패스되던 보도자료, 다섯 사람이 헤드라인이 그대로 기사로 옮겨가게 같이 다듬어 드",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p40",
+    "case_id": "c40",
     "phrasing": "경영 진단 보고서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p40",
+    "case_id": "c40",
     "phrasing": "경영 진단 보고서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p40",
+    "case_id": "c40",
     "phrasing": "임원이 권고를 요청하지 않던 진단 보고서, 다섯 사람이 사실·해석·시사점으로 같이 엮어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p41",
+    "case_id": "c41",
     "phrasing": "임원용 PPT 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p41",
+    "case_id": "c41",
     "phrasing": "임원용 PPT",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p41",
+    "case_id": "c41",
     "phrasing": "5분 안에 결정이 떨어지지 않던 임원 PPT, 다섯 사람이 두괄식 10장으로 같이 압축해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p42",
+    "case_id": "c42",
     "phrasing": "강의 자료 (덱+스크립트) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p42",
+    "case_id": "c42",
     "phrasing": "강의 자료 (덱+스크립트)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p42",
+    "case_id": "c42",
     "phrasing": "끝나고도 행동이 바뀌지 않던 강의, 다섯 사람이 한 슬라이드 한 개념으로 같이 정리해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p43",
+    "case_id": "c43",
     "phrasing": "영업 덱·피치덱 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p43",
+    "case_id": "c43",
     "phrasing": "영업 덱·피치덱",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p43",
+    "case_id": "c43",
     "phrasing": "다음 미팅으로 넘어가지 않던 영업 덱, 다섯 사람이 결정 요소 다섯 장과 차별성 한 줄로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p44",
+    "case_id": "c44",
     "phrasing": "외부 강연 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p44",
+    "case_id": "c44",
     "phrasing": "외부 강연",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p44",
+    "case_id": "c44",
     "phrasing": "강연 끝에 한 줄 트윗으로 남지 않던 발표, 다섯 사람이 한 장면과 한 단언으로 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p45",
+    "case_id": "c45",
     "phrasing": "컨설팅 덱 (진단·권고) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p45",
+    "case_id": "c45",
     "phrasing": "컨설팅 덱 (진단·권고)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p45",
+    "case_id": "c45",
     "phrasing": "30분 안에 권고가 채택되지 않던 컨설팅 덱, 다섯 사람이 액션 타이틀과 So what으로 같이 잡아드립니다",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p46",
+    "case_id": "c46",
     "phrasing": "워크샵 자료 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p46",
+    "case_id": "c46",
     "phrasing": "워크샵 자료",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p46",
+    "case_id": "c46",
     "phrasing": "자기 역할과 시간이 보이지 않던 워크샵 자료, 다섯 사람이 분 단위 시간표와 산출물로 같이 정리해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p47",
+    "case_id": "c47",
     "phrasing": "엑셀 모델 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p47",
+    "case_id": "c47",
     "phrasing": "엑셀 모델",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p47",
+    "case_id": "c47",
     "phrasing": "가정 두 개를 바꿔도 시나리오 비교가 안 되던 엑셀 모델, 다섯 사람이 색 분리와 셀 코멘트로 같이 손봐드립",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p49",
+    "case_id": "c49",
     "phrasing": "계약서 검토 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p49",
+    "case_id": "c49",
     "phrasing": "계약서 검토",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p49",
+    "case_id": "c49",
     "phrasing": "30분 안에 사인 여부가 정해지지 않던 계약서, 다섯 사람이 정의 조항으로 모호함을 같이 잘라드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p5",
+    "case_id": "c5",
     "phrasing": "뉴스레터 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p5",
+    "case_id": "c5",
     "phrasing": "뉴스레터",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p5",
+    "case_id": "c5",
     "phrasing": "출근길 5분 안에 다 읽고 한 코너가 슬랙으로 공유되는 뉴스레터, 다섯 사람이 후크와 CTA로 같이 만들어 ",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p50",
+    "case_id": "c50",
     "phrasing": "법률 검토 의견서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p50",
+    "case_id": "c50",
     "phrasing": "법률 검토 의견서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p50",
+    "case_id": "c50",
     "phrasing": "결론 한 줄이 흐려 의사결정이 미뤄지던 법률 의견서, 다섯 사람이 각주와 가정으로 같이 정리해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p51",
+    "case_id": "c51",
     "phrasing": "소장·답변서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p51",
+    "case_id": "c51",
     "phrasing": "소장·답변서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p51",
+    "case_id": "c51",
     "phrasing": "첫 변론기일에 보충 자료 청구가 따라오던 서면, 다섯 사람이 청구취지와 시계열로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p52",
+    "case_id": "c52",
     "phrasing": "감사 의견서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p52",
+    "case_id": "c52",
     "phrasing": "감사 의견서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p52",
+    "case_id": "c52",
     "phrasing": "적정·한정·부적정의 경계가 흐리던 감사 의견서, 다섯 사람이 회계기준 인용으로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p53",
+    "case_id": "c53",
     "phrasing": "세무 의견서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p53",
+    "case_id": "c53",
     "phrasing": "세무 의견서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p53",
+    "case_id": "c53",
     "phrasing": "리스크 등급이 흐려 결정이 미뤄지던 세무 의견서, 다섯 사람이 결론 한 줄과 법령 인용으로 같이 정리해 드립",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p54",
+    "case_id": "c54",
     "phrasing": "실사 보고서 (Due Diligence) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p54",
+    "case_id": "c54",
     "phrasing": "실사 보고서 (Due Diligence)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p54",
+    "case_id": "c54",
     "phrasing": "우선순위가 잡히지 않던 실사 발견, 다섯 사람이 카테고리별 Executive Summary로 같이 정리해 드",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p55",
+    "case_id": "c55",
     "phrasing": "내부통제 평가 보고서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p55",
+    "case_id": "c55",
     "phrasing": "내부통제 평가 보고서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p55",
+    "case_id": "c55",
     "phrasing": "우선 조치가 30분 안에 떨어지지 않던 내부통제 평가, 다섯 사람이 결함·영향·권고 셋으로 같이 엮어드립니다",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p56",
+    "case_id": "c56",
     "phrasing": "카피·이름 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p56",
+    "case_id": "c56",
     "phrasing": "카피·이름",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p56",
+    "case_id": "c56",
     "phrasing": "다음 날 입에 붙지 않던 카피 한 줄과 검색창에 정확히 입력되지 않던 이름, 다섯 사람이 한 점에 임팩트로 ",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p59",
+    "case_id": "c59",
     "phrasing": "브랜드 가이드라인 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p59",
+    "case_id": "c59",
     "phrasing": "브랜드 가이드라인",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p59",
+    "case_id": "c59",
     "phrasing": "가이드를 보고도 작업이 시작되지 않던 브랜드, 다섯 사람이 본질·보이스·비주얼·금지로 같이 정리해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p6",
+    "case_id": "c6",
     "phrasing": "사례 연구 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p6",
+    "case_id": "c6",
     "phrasing": "사례 연구",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p6",
+    "case_id": "c6",
     "phrasing": "자랑 일색이라 동종 매니저가 닫아버리던 케이스, 다섯 사람이 한 줄 인사이트가 다른 산업에도 인용되도록 같이",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p60",
+    "case_id": "c60",
     "phrasing": "내러티브 메모 (6-pager) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p60",
+    "case_id": "c60",
     "phrasing": "내러티브 메모 (6-pager)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p60",
+    "case_id": "c60",
     "phrasing": "첫 30분 침묵 독해를 견디지 못하던 6-pager, 다섯 사람이 결론과 완결 산문으로 같이 다듬어 드립니다",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p61",
+    "case_id": "c61",
     "phrasing": "준비서면 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p61",
+    "case_id": "c61",
     "phrasing": "준비서면",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p61",
+    "case_id": "c61",
     "phrasing": "다음 기일에 인용되지 않던 준비서면, 다섯 사람이 쟁점별 상대 주장·법리·결론 3단으로 같이 엮어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p63",
+    "case_id": "c63",
     "phrasing": "소설 쓰기 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p63",
+    "case_id": "c63",
     "phrasing": "소설 쓰기",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p63",
+    "case_id": "c63",
     "phrasing": "페이지를 덮고 나면 작가 이름이 잊히던 글, 다섯 사람이 일상 한순간을 동사로 같이 확대해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p64",
+    "case_id": "c64",
     "phrasing": "시 쓰기 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p64",
+    "case_id": "c64",
     "phrasing": "시 쓰기",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p64",
+    "case_id": "c64",
     "phrasing": "한 정서가 한 점에 모이지 않던 시, 다섯 사람이 행갈이의 필연성으로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p65",
+    "case_id": "c65",
     "phrasing": "이력서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p65",
+    "case_id": "c65",
     "phrasing": "이력서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p65",
+    "case_id": "c65",
     "phrasing": "30초 안에 인터뷰 결정이 떨어지지 않던 이력서, 다섯 사람이 임팩트 동사와 숫자로 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p66",
+    "case_id": "c66",
     "phrasing": "자기소개서 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p66",
+    "case_id": "c66",
     "phrasing": "자기소개서",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p66",
+    "case_id": "c66",
     "phrasing": "첫 줄에서 결론이 잡히지 않던 자소서, 다섯 사람이 STAR 응용으로 같이 엮어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p67",
+    "case_id": "c67",
     "phrasing": "인터뷰 답변 준비 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p67",
+    "case_id": "c67",
     "phrasing": "인터뷰 답변 준비",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p67",
+    "case_id": "c67",
     "phrasing": "90초 안에 핵심이 닿지 않던 답변, 다섯 사람이 STAR 구조로 같이 압축해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p68",
+    "case_id": "c68",
     "phrasing": "리더 심리 상담 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p68",
+    "case_id": "c68",
     "phrasing": "리더 심리 상담",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p68",
+    "case_id": "c68",
     "phrasing": "누구에게도 못 털어놓은 리더의 고민, 다섯 사람이 같이 듣고 다음 한 걸음을 정해드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p69",
+    "case_id": "c69",
     "phrasing": "링크드인 프로필 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p69",
+    "case_id": "c69",
     "phrasing": "링크드인 프로필",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p69",
+    "case_id": "c69",
     "phrasing": "헤드라인에서 멈춰버리던 링크드인 프로필, 다섯 사람이 About 두 줄까지 끌고 가게 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p7",
+    "case_id": "c7",
     "phrasing": "출시 메시지 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p7",
+    "case_id": "c7",
     "phrasing": "출시 메시지",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p7",
+    "case_id": "c7",
     "phrasing": "알림에서 멈칫하고 클릭으로 이어지는 출시 메시지 한 줄, 다섯 사람이 사용자 언어로 같이 잡아드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p71",
+    "case_id": "c71",
     "phrasing": "AI 글 자연스럽게 다듬기 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p71",
+    "case_id": "c71",
     "phrasing": "AI 글 자연스럽게 다듬기",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p71",
+    "case_id": "c71",
     "phrasing": "AI 냄새로 첫 단락에서 닫히던 글, 다섯 사람이 사람 호흡으로 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p72",
+    "case_id": "c72",
     "phrasing": "보고서 (분석) 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p72",
+    "case_id": "c72",
     "phrasing": "보고서 (분석)",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p72",
+    "case_id": "c72",
     "phrasing": "한 페이지 요약에서 통찰이 안 잡히던 분석 보고서, 다섯 사람이 통찰 한 줄과 반대 케이스로 같이 잡아드립니",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p8",
+    "case_id": "c8",
     "phrasing": "FAQ 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p8",
+    "case_id": "c8",
     "phrasing": "FAQ",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p8",
+    "case_id": "c8",
     "phrasing": "답을 찾다 지쳐 떠나던 사용자, 다섯 사람이 한 항목으로 문제가 풀리는 FAQ를 같이 정리해 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p9",
+    "case_id": "c9",
     "phrasing": "CS 응답 템플릿 작성",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p9",
+    "case_id": "c9",
     "phrasing": "CS 응답 템플릿",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p9",
+    "case_id": "c9",
     "phrasing": "화가 누그러지지 않던 CS 답장, 다섯 사람이 인정·조치·후속이 한 호흡에 들어오게 같이 엮어드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p75",
+    "case_id": "c75",
     "phrasing": "삼성전자 분기 실적 1페이지로 정리해줘",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p75",
+    "case_id": "c75",
     "phrasing": "DART 기반 회사 분석 리포트",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p75",
+    "case_id": "c75",
     "phrasing": "PM 미팅 전 1페이지 회사 진단",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p76",
+    "case_id": "c76",
     "phrasing": "신사업 검토할 때 어떤 프레임워크 써야 할까",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p76",
+    "case_id": "c76",
     "phrasing": "전략 프레임워크 적용 메모",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p76",
+    "case_id": "c76",
     "phrasing": "CEO에게 보낼 1on1 결정 메모",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p70",
+    "case_id": "c70",
     "phrasing": "랜딩페이지 만들어줘",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p70",
+    "case_id": "c70",
     "phrasing": "웹사이트·랜딩페이지",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p70",
+    "case_id": "c70",
     "phrasing": "첫 화면에서 닫히던 랜딩페이지, 다섯 사람이 한 화면 한 메시지와 CTA 한 개로 같이 다듬어 드립니다.",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p73",
+    "case_id": "c73",
     "phrasing": "Stripe 스타일 SaaS 웹사이트 한 페이지 만들어줘",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p73",
+    "case_id": "c73",
     "phrasing": "웹사이트 제작",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p73",
+    "case_id": "c73",
     "phrasing": "B2B SaaS 마케팅 매니저가 모바일에서 보는 단일 HTML 랜딩",
     "intent_tag": "audience_clue"
   },
   {
-    "case_id": "p74",
+    "case_id": "c74",
     "phrasing": "인스타 릴스 커버 이미지 프롬프트 짜줘",
     "intent_tag": "natural_intent"
   },
   {
-    "case_id": "p74",
+    "case_id": "c74",
     "phrasing": "이미지 제작 프롬프트 세트",
     "intent_tag": "direct_keyword"
   },
   {
-    "case_id": "p74",
+    "case_id": "c74",
     "phrasing": "30대 브랜드 마케터가 첫 생성에서 바로 쓰는 이미지",
     "intent_tag": "audience_clue"
   }
