@@ -5,7 +5,7 @@
 > 68 cases (emails, board memos, IR letters, landing pages, image-prompt sets, hand-coded
 > websites, DART company briefs, strategy memos …), iterates against a **9.5 / 10** pass
 > bar with anti-pattern pre-correction, and delivers polished Korean output. All inside
-> Claude Code. Open Beta v0.3.
+> Claude Code. Open Beta v0.4.1.
 
 **Korean documentation:** [README.ko.md](README.ko.md)
 
@@ -253,32 +253,55 @@ definitions. Cost is deterministic, not exploratory.
 
 ## Status
 
-**Open Beta v0.3.** Production-ready for individual use. The Agent Teams path remains
+**Open Beta v0.4.1.** Production-ready for individual use. The Agent Teams path remains
 experimental and falls back to sequential sub-agent execution on error. Known limits and
 roadmap are in [README.ko.md § 12 알려진 한계](README.ko.md).
 
-Verified quality metrics (v0.3):
+### What's new in v0.4 (2026-05-17)
+
+- **Fallback workflow enforced.** Even when the case library doesn't match, BLACK + RGSB
+  4-reviewer scoring + 9.5 gate run end-to-end with a generic 5-persona profile. No
+  shortcutting.
+- **`assisted` builder mode added.** HTML builder now has 4 modes: `slides` / `landing` /
+  `direct` / `assisted`. The new mode handles generic-case + HTML requests by picking one of
+  the 35 `slide_library` templates as the base, then letting BLACK inject content + any
+  needed interactions (tabs, filters, etc.).
+- **`html_mode` frontmatter field.** Case files now declare their HTML mode explicitly.
+  SKILL.md no longer hardcodes case IDs.
+- **taste-skill integration.** 8 design-related cases (p41/42/43/45/p59/p70/p73/p74) plus
+  generic-case + HTML now auto-enrich with [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
+  variants (`design-taste-frontend`, `brandkit`, `imagegen-frontend-web`, etc.) for
+  anti-slop output. Install: `npx skills add https://github.com/Leonxlnx/taste-skill`.
+  Graceful degradation if not installed.
+- **Real enrich dispatch.** `/dart`, `/strategy`, and taste-skill variants are now invoked
+  through Claude's `Skill` tool directly. The earlier stub references to non-existent Python
+  scripts have been replaced with explicit "Claude procedure" descriptions.
+
+Verified quality metrics (v0.2 measurement; no regression in v0.3 / v0.4 / v0.4.1):
 
 | Gate | Target | Measured |
 |---|---|---|
 | Routing top-1 accuracy | ≥ 90% (Wilson 95% LB) | **98.4%** (LB 0.954) on 204 phrasings |
 | Anti-pattern false positive | 0% | **0%** (50 / 50) |
 | Unit + integration tests | green | **102 / 102 pass** |
-| Quality-gate scenarios (avg) | ≥ 9.0 | **9.17** (1 / 18 sampled; full run in v0.4) |
+| Quality-gate scenarios (avg) | ≥ 9.0 | **9.17** (1 / 18 sampled; full run planned for v0.5) |
 
 ---
 
 ## Architecture (one paragraph)
 
-7-phase pipeline. **Phase 0** initializes a session workspace. **Phase 1** routes via a Haiku
-judge (98.4% top-1 accuracy on 204 phrasings). **Phase 2** loads the case definition, picks
-a `slide_library` template for `slides`/`landing` HTML cases (p73 `direct` mode skips this
-step), and optionally invokes adjacent skills (`/dart`, `/strategy`) declared in the case's
-`enrich:` field. **Phase 3** runs BLACK to produce a
-first draft. **Phase 4** runs five anti-pattern detectors with a 3-strike cap. **Phase 5**
-runs RGSB review (Agent Teams primary path: 4 critics in parallel, with `SendMessage`
-debate; sub-agent fallback if `TeamCreate` is unavailable). **Phase 6** loops back to Phase 3
-if the average is below 9.5 and round count < 4. **Phase 7** delivers the three artifacts.
+7-phase pipeline. **Phase 0** initializes a session workspace. **Phase 1** routes against
+the 68-case index; if all candidates score below 0.5 confidence, it falls back to
+`generic_case` mode with a generic 5-persona profile (BLACK + RGSB + 9.5 gate still
+enforced). **Phase 2** loads the case definition, reads the `html_mode` frontmatter field
+(`slides` / `landing` / `direct` / `assisted`) to pick a `slide_library` template for
+non-`direct` HTML cases, and optionally invokes adjacent skills (`/dart`, `/strategy`,
+taste-skill variants) declared in the case's `enrich:` field. **Phase 3** runs BLACK to
+produce a first draft. **Phase 4** runs five anti-pattern detectors with a 3-strike cap.
+**Phase 5** runs RGSB review (Agent Teams primary path: 4 critics in parallel, with
+`SendMessage` debate; sub-agent fallback if `TeamCreate` is unavailable). **Phase 6** loops
+back to Phase 3 if the average is below 9.5 and round count < 4. **Phase 7** delivers the
+three artifacts.
 
 Details: [skills/roasting/SKILL.md](skills/roasting/SKILL.md).
 
