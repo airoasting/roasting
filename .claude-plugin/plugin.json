@@ -1,7 +1,7 @@
 {
   "name": "roasting",
-  "version": "0.3.0",
-  "description": "5-Color Harness execution engine for Korean business leaders. Auto-routes 68 white-collar artifact cases (email, board memo, investor letter, landing page, image-prompt set, hand-coded website, DART company brief, strategy memo, etc.) and produces output via BLACK Producer + RGSB Reviewer team with debate-driven scoring. PPT and landing-page cases auto-bind a slide_library template; the website-build case (p73) outputs a single hand-coded HTML file directly. Korean only.",
+  "version": "0.4.0",
+  "description": "5-Color Harness execution engine for Korean business leaders. Auto-routes 68 white-collar artifact cases (email, board memo, investor letter, landing page, image-prompt set, hand-coded website, DART company brief, strategy memo, etc.) and produces output via BLACK Producer + RGSB Reviewer team with debate-driven scoring. HTML builder has 4 modes: slides / landing / direct / assisted. Generic fallback (case unmatched) still runs full BLACK+RGSB workflow with 9.5 gate. Design-related cases auto-enrich Leonxlnx/taste-skill (design-taste-frontend, brandkit, imagegen) for anti-slop output. Korean only.",
   "author": {
     "name": "AI ROASTING",
     "url": "https://airoasting.github.io"

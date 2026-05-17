@@ -4,6 +4,22 @@ This project follows [Semantic Versioning](https://semver.org/) and [Keep a Chan
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-05-17
+
+### Added
+
+- **taste-skill 외부 통합** (Leonxlnx/taste-skill) — 디자인 산출물(HTML 페이지·웹사이트·랜딩·슬라이드·이미지·로고·브랜드 키트)에 anti-slop 프론트엔드 프레임워크를 자동 enrich. 8개 디자인 케이스(p41/42/43/45/p59/p70/p73/p74) frontmatter에 `enrich` 블록 추가. 변형 자동 선택 로직으로 `design-taste-frontend`(기본 HTML) / `high-end-visual-design`(프리미엄 톤, p70 보강) / `minimalist-ui` / `industrial-brutalist-ui` / `imagegen-frontend-web` / `imagegen-frontend-mobile` / `brandkit`(p59·로고·아이덴티티) / `full-output-enforcement` 중 1순위 변형을 메인 Claude가 입력에서 추론해 호출. generic_case 폴백 + HTML 요청 시에도 자동 적용. 미설치 시 graceful degradation + 1회 설치 안내(`npx skills add https://github.com/Leonxlnx/taste-skill`). 신규 `design_artifact_detected` `when` 조건 추가.
+- **`assisted` 빌더 모드 신설** — generic_case 폴백 + 사용자가 HTML/페이지/대시보드/일정표/카드 등 디자인 산출물을 요청할 때 자동 진입. 슬라이드 라이브러리 35종 중 1개를 베이스로 고른 뒤 BLACK이 콘텐츠 주입 + 필요한 인터랙티브 요소(탭·필터·접힘·간단 차트)만 보강. 처음부터 자체 디자인 생성은 금지 (= `direct` 영역 침범). HTML 빌더 모드는 이제 4종: `slides | landing | direct | assisted`.
+- **generic 페르소나 프로파일** — Phase 1 §5 폴백에서 케이스 시드가 없을 때 사용할 BLACK·RED·SILVER·BLUE·GOLD 5인 기본 캐스팅을 명시. 입력에서 도메인·산출물 유형·사용 시점·결정자를 자체 추론해 5색 채점 워크플로우를 그대로 유지.
+- **케이스 프론트매터 `html_mode` 필드** — `p41`·`p42`·`p43`·`p45`·`p70`·`p73`에 `output_format` / `html_mode` / `slide_template_pool` / `default_formality` 필드 추가. SKILL.md는 이 필드를 단일 진실로 참조하고 케이스 ID 하드코딩을 제거. 향후 HTML 케이스 추가는 케이스 파일만 수정해도 동작.
+
+### Changed
+
+- **Phase 1 §5 폴백 워크플로우 강제** — 라우팅 신뢰도 < 0.5(generic_case)라도 Phase 3 BLACK 서브에이전트·Phase 5 RGSB 4인 채점·9.5 게이트·Phase 7 3종 산출물 출력을 단축 없이 그대로 실행. "자산 시드 없으니 한 번에 출력" 같은 단축을 명시적으로 금지. v0.3 세션에서 폴백 모드가 워크플로우를 통째로 스킵하던 사고의 재발 방지.
+- **SKILL.md ↔ 구현 일관성 정리 (갈래 B)** — `scripts/route.py`·`scripts/build_slide_html.py`·`scripts.invoke_skill`·`scripts.anti_patterns.detect_all`·`scripts.deliver.deliver()` 등 실재하지 않던 Python 호출 묘사를 "Claude 절차 — Python 스크립트 없음. 메인 Claude가 직접 수행"으로 라벨링하고 절차 산문으로 교체. 의사코드 블록은 "참고용 의사코드 (Claude가 동일하게 수행)"로 명시.
+- **`enrich` 호출 경로 정정** — `scripts.invoke_skill.invoke()` stub 묘사를 메인 Claude의 `Skill` 도구 직접 dispatch 절차로 교체. 사용자 환경에 스킬 미설치 시 조용히 graceful degradation.
+- **컨펌 시점·에러 폴백 표** — `slides`·`landing`·`assisted` 3-mode 세트로 슬라이드 ID 선택 트리거를 확장. 라우팅 신뢰도 < 0.5와 영어 입력 폴백은 "Phase 1 §5 동일 절차"로 정리.
+
 ## [0.3.0] - 2026-05-17
 
 ### Added
