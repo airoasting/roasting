@@ -4,6 +4,12 @@ This project follows [Semantic Versioning](https://semver.org/) and [Keep a Chan
 
 ## [Unreleased]
 
+## [0.4.3] - 2026-05-17
+
+### Added
+
+- **Phase 7 표준 완료 푸터 통일** — 모든 호출의 deliver 메시지에 세 가지 메타 항목을 강제로 포함: **소요 시간**(세션 시작부터 deliver 시점까지 `N분 M초`), **주요 업무 한 줄**(`{case_id} · {라운드}라운드 · 평균 {score}` + 합격/강제 종료 아이콘), **카카오톡 발송 여부**(`mcp__*__KakaotalkChat-MemoChat` 도구 등록 시 자동 발송 후 `📱 발송됨`, 미연결 시 `스킵`). 이전엔 사용자가 명시적으로 요청해야 표시되던 항목들을 표준화. 메시지 본문은 200자 이내 압축.
+
 ## [0.4.2] - 2026-05-17
 
 ### Added

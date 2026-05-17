@@ -242,19 +242,31 @@ for reviewer in [RED, GOLD, SILVER, BLUE]:
    - `output.{html|md}`: 최종 BLACK 산출물 (출력 포맷에 따라).
    - `critique.md`: 라운드별 RGSB 4인 코멘트 정리 (교재).
    - `reasoning.md`: BLACK 결정 로그 + 안티패턴 검출 이력 + 라운드 진화.
-4. 사용자에게 인터랙티브 안내:
+4. **표준 완료 푸터 (v0.4.3 통일 양식 — 모든 호출에 강제):**
+
    ```
-   완료. 산출물 위치: {session_dir}/final/
+   ✅ 완료
+
+   - 소요 시간: {N}분 {M}초 ({session_start_HHMMSS} → {now_HHMMSS})
+   - 주요 업무: {case_id 또는 generic_case} · {라운드 수}라운드 · 평균 {final_score}{ ✅(≥9.5) | ⚠️(<9.5 강제 출력)}
+   - 카카오톡: {📱 발송됨 | ⚠️ MemoChat 미연결, 스킵}
+
+   산출물 위치: {session_dir}/final/
    - output.{html|md}     ← 임원이 사용
    - critique.md          ← RGSB 4인 평가 (교재)
    - reasoning.md         ← BLACK 결정 로그
-   
-   다음 액션을 골라주세요:
+
+   다음 액션:
    1) 산출물 보기
    2) critique 보기
    3) 다시 호출 (/roasting xxxxx)
    4) 피드백 (/roasting --feedback)
    ```
+
+   **세 가지 메타 항목은 절대 빠뜨리지 않는다 — 소요 시간 / 주요 업무 한 줄 / 카카오톡 발송 여부.**
+   - 소요 시간: session_id의 타임스탬프(`YYYYMMDD-HHMMSS-tmpid`)와 현재 시각의 차로 계산. `N분 M초` 포맷.
+   - 주요 업무: `{case_id} · {라운드}라운드 · 평균 {score}` 한 줄. generic_case면 case_id 자리에 `generic_case`로 표기.
+   - 카카오톡: `mcp__*__KakaotalkChat-MemoChat` 도구가 사용자 환경에 등록되어 있으면 자동 호출, 미설치/미연결 시 "스킵"으로 표시. 메시지 본문은 위 3줄을 압축한 200자 이내(스킬 호출 결과 / 케이스 / 라운드 / 점수 / 소요 시간 / 경로).
 5. **익명 telemetry 전송 (옵트인 시 — v0.4 현재 비활성, v1.0 GA에 활성화):**
    - 참고용 의사코드 (실제 호출은 v1.0에 추가, 콘텐츠 텍스트는 절대 포함 안 됨):
    ```python
@@ -413,4 +425,4 @@ npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-fro
 
 `/roasting xxxxx` (또는 자연어) → 68 케이스 자동 라우팅 → BLACK 1명 + RGSB 4인 5-Color → 9.5 합격선 + 4라운드 → 산출물 3종.
 
-**한국어 전용. 베타 v0.4.2.** 세부 변경 이력은 [`CHANGELOG.md`](../../CHANGELOG.md) 참조.
+**한국어 전용. 베타 v0.4.3.** 세부 변경 이력은 [`CHANGELOG.md`](../../CHANGELOG.md) 참조.
