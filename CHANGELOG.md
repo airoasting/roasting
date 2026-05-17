@@ -4,6 +4,20 @@ This project follows [Semantic Versioning](https://semver.org/) and [Keep a Chan
 
 ## [Unreleased]
 
+## [0.4.5] - 2026-05-17
+
+### Added
+
+- **Fact-Grounding 규약 (출처 강제)** — BLACK이 fact-heavy 도메인(여행·식당·회사·통계·뉴스·인물·가격·사양) 신호 감지 시 WebSearch/WebFetch로 1차 출처를 확보한 뒤 인라인 링크·footnote로 산출물에 박는 새 행동 규약. 출처를 못 찾으면 그 사실 자체를 빼거나 "현장 확인 권장" 같은 안전 표현 사용. 환각으로 채우는 행위 금지.
+- **이미지 규약 (출처 포함 시각 자료)** — HTML 산출물(slides·landing·direct·assisted)과 시각 친화 Markdown(여행·브랜드·회사 분석)은 BLACK이 적절한 시각 자료 포함. 우선순위: ① 사용자 제공 ② 공식 출처 ③ 무료 라이선스 스톡(Unsplash) ④ 명시적 자리표시자(`<div class="img-placeholder">`). 가짜 URL 금지.
+- **신규 안티패턴 2종** — `unsourced-fact` (출처 없는 구체 사실), `fake-image-url` (검증 없는 이미지 URL). 각각 양성/음성 예시 5개 + BLACK 재작성 지시 템플릿 + 적용 카테고리 명시.
+- **BLACK 도구 확장** — `agents/roasting-black.md`의 tools에 `WebSearch`, `WebFetch` 추가. 1차 출처 확보용.
+
+### Changed
+
+- **안티패턴 검출 룰** 5종 → 7종으로 확장. `Phase 4` 본문·참조 인덱스에 신규 룰 노출.
+- **SKILL.md Phase 3** — BLACK 호출 시 fact-grounding/이미지 활성화 신호 감지 절차 명시. 도메인 신호가 있으면 BLACK 프롬프트에 "fact-heavy 모드" 라벨링.
+
 ## [0.4.4] - 2026-05-17
 
 ### Changed
