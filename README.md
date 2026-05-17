@@ -5,7 +5,7 @@
 > 68 cases (emails, board memos, IR letters, landing pages, image-prompt sets, hand-coded
 > websites, DART company briefs, strategy memos …), iterates against a **9.5 / 10** pass
 > bar with anti-pattern pre-correction, and delivers polished Korean output. All inside
-> Claude Code. Open Beta v0.4.2.
+> Claude Code. Open Beta v0.4.13.
 
 **Korean documentation:** [README.ko.md](README.ko.md)
 
@@ -30,8 +30,10 @@
 2. **Casts** five personas *per case*. Every case has its own producer + 4 critics with their
    own vocabulary, pass-line scenes, and forbidden patterns.
 3. **Produces** a first draft through the BLACK persona, the case-cast expert author.
-4. **Auto-corrects** for 5 anti-patterns (vague CTA, unsourced numbers, legal-risk terms,
-   missing GOLD hook, tone mismatch) *before* the critics see the draft.
+4. **Auto-corrects** for 10 anti-patterns (vague CTA, unsourced numbers, legal-risk terms,
+   missing GOLD hook, tone mismatch, unsourced facts, fake image URLs, internal contradictions,
+   slide-template violations, English-verb direct translations) *before* the critics see
+   the draft.
 5. **Reviews** the draft with four specialist critics: RED (logic), SILVER (domain expertise),
    BLUE (empathy/tone), GOLD (reader-in-scene simulation).
 6. **Debates** when critics disagree (score spread σ ≥ 0.5): the highest and lowest scorer
@@ -95,7 +97,8 @@ casting or task-definition issue. 1-on-1 recommended." The bar's transparency is
 
 ### 5. Pre-critique anti-pattern correction
 
-Five detectors run *before* the four critics ever see the draft:
+Ten detectors run *before* the four critics ever see the draft. Each rule declares
+`applies_to_categories` so only relevant detectors fire per case.
 
 | Detector | Catches |
 |---|---|
@@ -104,6 +107,11 @@ Five detectors run *before* the four critics ever see the draft:
 | `HALLUCINATED_NUMBER` | Unsourced percentages or counts |
 | `MISSING_GOLD_HOOK` | First 200 chars don't activate the GOLD scene |
 | `TONE_MISMATCH` | First sentence vocabulary drifts from cast tone |
+| `UNSOURCED_FACT` *(v0.4.5)* | Specific facts (places, prices, specs) without 1st-party sources |
+| `FAKE_IMAGE_URL` *(v0.4.5)* | Hallucinated image URLs in HTML or Markdown outputs |
+| `INTERNAL_CONTRADICTION` *(v0.4.7)* | Same object labeled, numbered, or dated inconsistently across the artifact |
+| `SLIDE_TEMPLATE_VIOLATION` *(v0.4.8)* | HTML slide outputs violating the real template baseline (`<deck-stage>` hallucination, 1920px fixed pixels, missing `.deck` container, etc.) |
+| `ENGLISH_VERB_DIRECT` *(v0.4.13)* | break / kill / force direct translations: "직무가 깨진다" (job breaks), "가설을 죽인다" (kill the hypothesis), "AI에게 시킨다" (force AI to do X) |
 
 BLACK rewrites itself before review; the round counter is not decremented. Three consecutive
 hits on the same pattern escalate to the user. Critics never waste cycles on first-order
@@ -292,9 +300,29 @@ definitions. Cost is deterministic, not exploratory.
 
 ## Status
 
-**Open Beta v0.4.2.** Production-ready for individual use. The Agent Teams path remains
+**Open Beta v0.4.13.** Production-ready for individual use. The Agent Teams path remains
 experimental and falls back to sequential sub-agent execution on error. Known limits and
 roadmap are in [README.ko.md § 12 알려진 한계](README.ko.md).
+
+### What's new in v0.4.5–v0.4.13 (2026-05-17)
+
+- **v0.4.13 — English verb direct-translation block.** 10th anti-pattern `ENGLISH_VERB_DIRECT`
+  catches break / kill / force literal translations ("직무가 깨진다 / 가설을 죽인다 / AI에게
+  시킨다"). Separate axis from v0.4.12 lexical jargon block. Triggered by 2× user feedback
+  in a c42 lecture-deck session.
+- **v0.4.10–v0.4.12 — Korean jargon block (3 categories).** Strong monosyllabic verbs
+  (박·갈·꽂·민·말·돌리·태우·털·깎·굴리) + English-translation adverbs (즉시·가동) + system
+  nominalizations (재편·재구성·흡수·압축·구축) all blocked. Meta-principle: "consulting
+  decisiveness comes from clarity of conclusion, not vocabulary intensity."
+- **v0.4.11 — Case ID prefix rename.** All 68 cases renamed to `c1.md` ~ `c76.md` (previous
+  prefix collided with `prompt` / `page` semantics).
+- **v0.4.7–v0.4.8 — Pre-processing pack + slide-template hallucination purge.** BLACK now
+  pre-resolves relative dates and missing parameters before drafting. Slide-template
+  hallucinations (`<deck-stage>`, `deck-stage.js` 404, 1920×1080 fixed) eliminated via the
+  `SLIDE_TEMPLATE_VIOLATION` detector. Korean polish pass (Phase 6.5) added.
+- **v0.4.5 — Fact-grounding + image citation.** Search-heavy outputs (travel, company
+  briefs, statistics) now require 1st-party sources; `UNSOURCED_FACT` and `FAKE_IMAGE_URL`
+  detectors added.
 
 ### What's new in v0.4 (2026-05-17)
 
@@ -316,7 +344,7 @@ roadmap are in [README.ko.md § 12 알려진 한계](README.ko.md).
   through Claude's `Skill` tool directly. The earlier stub references to non-existent Python
   scripts have been replaced with explicit "Claude procedure" descriptions.
 
-Verified quality metrics (v0.2 measurement; no regression in v0.3 / v0.4 / v0.4.1 / v0.4.2):
+Verified quality metrics (v0.2 measurement; no regression through v0.4.13):
 
 | Gate | Target | Measured |
 |---|---|---|
@@ -336,7 +364,7 @@ enforced). **Phase 2** loads the case definition, reads the `html_mode` frontmat
 (`slides` / `landing` / `direct` / `assisted`) to pick a `slide_library` template for
 non-`direct` HTML cases, and optionally invokes adjacent skills (`/dart`, `/strategy`,
 taste-skill variants) declared in the case's `enrich:` field. **Phase 3** runs BLACK to
-produce a first draft. **Phase 4** runs five anti-pattern detectors with a 3-strike cap.
+produce a first draft. **Phase 4** runs ten anti-pattern detectors with a 3-strike cap.
 **Phase 5** runs RGSB review (Agent Teams primary path: 4 critics in parallel, with
 `SendMessage` debate; sub-agent fallback if `TeamCreate` is unavailable). **Phase 6** loops
 back to Phase 3 if the average is below 9.5 and round count < 4. **Phase 7** delivers the
