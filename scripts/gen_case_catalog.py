@@ -24,8 +24,10 @@ def main() -> None:
         fm = parse_fm(p.read_text(encoding="utf-8"))
         by_cat.setdefault(fm.get("category", "기타"), []).append(fm)
     args.out.parent.mkdir(parents=True, exist_ok=True)
+    total_cases = sum(len(items) for items in by_cat.values())
     lines = ["# 케이스 카탈로그\n\n",
-             "5color 사이트의 63개 화이트칼라 산출물 케이스 전체 목록.\n\n"]
+             f"5color 사이트의 64개 원본 케이스 + 로컬 확장 4개(p41 임원 PPT · p70 랜딩페이지 · "
+             f"p75 DART · p76 전략 메모) = 총 {total_cases}개 화이트칼라 산출물 케이스 전체 목록.\n\n"]
     for cat, items in by_cat.items():
         lines.append(f"## {cat} ({len(items)}개)\n\n")
         lines.append("| Folio | ID | 제목 | 한 줄 |\n|---|---|---|---|\n")

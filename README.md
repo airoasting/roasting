@@ -2,9 +2,10 @@
 
 > **5-Color Harness execution engine for Korean white-collar work.**
 > One producer + four critics with mandatory debate, not just score-averaging. Auto-routes
-> 66 cases (emails, board memos, IR letters, landing pages …), iterates against a **9.5 / 10**
-> pass bar with anti-pattern pre-correction, and delivers polished Korean output. All inside
-> Claude Code. Open Beta v0.2.
+> 68 cases (emails, board memos, IR letters, landing pages, image-prompt sets, hand-coded
+> websites, DART company briefs, strategy memos …), iterates against a **9.5 / 10** pass
+> bar with anti-pattern pre-correction, and delivers polished Korean output. All inside
+> Claude Code. Open Beta v0.3.
 
 **Korean documentation:** [README.ko.md](README.ko.md)
 
@@ -23,8 +24,9 @@
 
 `/roasting` takes a one-line description of your task in natural Korean and:
 
-1. **Routes** your request to the best-matching case from a library of 66 white-collar artifact
-   types (emails, apologies, board memos, investor letters, legal opinions, landing pages, …).
+1. **Routes** your request to the best-matching case from a library of 68 white-collar artifact
+   types (emails, apologies, board memos, investor letters, legal opinions, landing pages,
+   hand-coded websites, image-prompt sets, …).
 2. **Casts** five personas *per case*. Every case has its own producer + 4 critics with their
    own vocabulary, pass-line scenes, and forbidden patterns.
 3. **Produces** a first draft through the BLACK persona, the case-cast expert author.
@@ -36,9 +38,10 @@
    exchange comments and re-score. No forced consensus.
 7. **Iterates** up to 4 rounds against a **9.5 / 10** pass bar. If the bar isn't met after
    round 4, the engine reports the gap honestly rather than passing under-quality work.
-8. **Delivers** three outputs: the polished artifact, a critique sheet, and a reasoning log
-   (with optional slide deck for PPT and landing-page cases via the `slide_library` template
-   system).
+8. **Delivers** three outputs: the polished artifact, a critique sheet, and a reasoning log.
+   HTML output has three sub-modes: `slides` for PPT cases (template-injected), `landing`
+   for p70 (template-injected by H2 section), and `direct` for p73 웹사이트 제작 (BLACK
+   writes a complete HTML file from scratch, no template fetch).
 
 ---
 
@@ -52,10 +55,10 @@ another producer-reviewer loop. Six things set it apart.
 The five personas are *not generic*. For an email, BLACK is a 15-year B2B SaaS senior with
 Bain-consultant reply tone; for an executive PPT, BLACK is a 17-year McKinsey-bred strategy
 director. The four critics are recast just as specifically: their vocabulary, their
-end-of-turn patterns, and their pass-line scenes change per case. The 66 case definitions
+end-of-turn patterns, and their pass-line scenes change per case. The 68 case definitions
 themselves are the IP, not the orchestration code.
 
-**BLACK casting examples (4 of 66 cases):**
+**BLACK casting examples (4 of 68 cases):**
 
 | Case | BLACK casting |
 |---|---|
@@ -108,7 +111,7 @@ defects.
 
 ### 6. The case library is the asset
 
-`/roasting` is not a generic writing assistant. Each of the 66 cases ships with its own:
+`/roasting` is not a generic writing assistant. Each of the 68 cases ships with its own:
 BLACK casting, RGSB persona definitions, GOLD scene, pass-line criteria, forbidden phrases,
 and style rules. The asset is *which experts to cast for which artifact*, captured as
 checked-in `.md` files at `skills/roasting/references/cases/p*.md` and mirrored on the
@@ -145,13 +148,19 @@ structure, tone, and reader engagement. Never on missing citations or vague CTAs
 → p1 외부 비즈니스 이메일 → output.md (concise B2B email, 4-reviewer scored)
 
 /roasting 이번 분기 임원 PPT (실적 + 리스크 + 결정사항 3개)
-→ p41 임원 PPT → output.html (slide_library template + injected slides)
+→ p41 임원 PPT → output.html (slide_library template, `slides` mode)
 
 /roasting B2B SaaS 결제 모듈 랜딩페이지
-→ p70 웹사이트·랜딩페이지 → output.html (template + landing-section injection)
+→ p70 웹사이트·랜딩페이지 → output.html (template + landing-section injection, `landing` mode)
+
+/roasting Stripe 스타일 SaaS 한 페이지 사이트 만들어줘
+→ p73 웹사이트 제작 → output.html (BLACK writes complete HTML directly, `direct` mode)
+
+/roasting 인스타 릴스 커버 이미지 프롬프트 짜줘
+→ p74 이미지 제작 → output.md (7-step prompt set: scene / framing / lighting / palette / style / aspect / negative)
 
 /roasting 삼성전자 분기 실적 1페이지로
-→ p73 DART-based company analysis (auto-enriched via /dart) → output.md
+→ p75 DART-based company analysis (auto-enriched via /dart) → output.md
 ```
 
 ### What the output actually looks like
@@ -214,7 +223,7 @@ machine.
 
 ## Korean cases, universal pattern
 
-The 66 case definitions, critic personas, and quality rules are written in Korean and built
+The 68 case definitions, critic personas, and quality rules are written in Korean and built
 for Korean white-collar workflows. English input falls back to general 5-Color mode without
 case-specific seeds.
 
@@ -244,27 +253,28 @@ definitions. Cost is deterministic, not exploratory.
 
 ## Status
 
-**Open Beta v0.2.** Production-ready for individual use. The Agent Teams path remains
+**Open Beta v0.3.** Production-ready for individual use. The Agent Teams path remains
 experimental and falls back to sequential sub-agent execution on error. Known limits and
 roadmap are in [README.ko.md § 12 알려진 한계](README.ko.md).
 
-Verified quality metrics (v0.2):
+Verified quality metrics (v0.3):
 
 | Gate | Target | Measured |
 |---|---|---|
-| Routing top-1 accuracy | ≥ 90% (Wilson 95% LB) | **98.4%** (LB 0.954) on 198 phrasings |
+| Routing top-1 accuracy | ≥ 90% (Wilson 95% LB) | **98.4%** (LB 0.954) on 204 phrasings |
 | Anti-pattern false positive | 0% | **0%** (50 / 50) |
-| Unit + integration tests | green | **101 / 101 pass** |
-| Quality-gate scenarios (avg) | ≥ 9.0 | **9.17** (1 / 18 sampled; full run in v0.3) |
+| Unit + integration tests | green | **102 / 102 pass** |
+| Quality-gate scenarios (avg) | ≥ 9.0 | **9.17** (1 / 18 sampled; full run in v0.4) |
 
 ---
 
 ## Architecture (one paragraph)
 
 7-phase pipeline. **Phase 0** initializes a session workspace. **Phase 1** routes via a Haiku
-judge (98.4% top-1 accuracy on 198 phrasings). **Phase 2** loads the case definition, picks
-a `slide_library` template for HTML cases, and optionally invokes adjacent skills (`/dart`,
-`/strategy`) declared in the case's `enrich:` field. **Phase 3** runs BLACK to produce a
+judge (98.4% top-1 accuracy on 204 phrasings). **Phase 2** loads the case definition, picks
+a `slide_library` template for `slides`/`landing` HTML cases (p73 `direct` mode skips this
+step), and optionally invokes adjacent skills (`/dart`, `/strategy`) declared in the case's
+`enrich:` field. **Phase 3** runs BLACK to produce a
 first draft. **Phase 4** runs five anti-pattern detectors with a 3-strike cap. **Phase 5**
 runs RGSB review (Agent Teams primary path: 4 critics in parallel, with `SendMessage`
 debate; sub-agent fallback if `TeamCreate` is unavailable). **Phase 6** loops back to Phase 3
