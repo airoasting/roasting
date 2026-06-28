@@ -60,9 +60,9 @@ LEAD · 팀장(오케스트레이터)
 그런 다음 **이 실행의 워크스페이스를 만들고 팀원을 파일로 배치한다**(파일시스템이 있는 Claude Code 네이티브 동작. ChatGPT 호환 모드는 파일을 못 쓰니 이 단계를 건너뛰고 위 구조를 인라인으로만 보여 준다).
 
 1. 오늘 날짜로 실행 폴더를 만든다: `_workspace/{YYYYMMDD}_{NN}/`. `NN`은 오늘 이미 있는 `_workspace/{YYYYMMDD}_*`의 다음 2자리(`01`부터). (오늘 날짜를 모르면 `date +%Y%m%d`로 확인한다.)
-2. 그 아래 `agents/` 폴더를 만들고, **팀원마다 파일 하나씩** 떨어뜨린다.
-   - `agents/lead.md` — 팀장(오케스트레이터) 지침: 목적 + 진행 규칙 + handoff 순서.
-   - `agents/{단계번호}-{영문slug}.md` — 그 팀원의 `references/agent-prompts.md` 시스템 프롬프트 전문을, 아래 프런트매터를 붙여 저장한다. 검토자는 `review-{영문slug}.md`.
+2. **팀장은 `lead/` 폴더에, 팀원은 `agents/` 폴더에** 둔다(팀장과 실무 팀원은 다른 층이라 폴더를 나눈다).
+   - `lead/lead.md` — 팀장(오케스트레이터) 지침: 목적 + 진행 규칙 + handoff 순서.
+   - `agents/{단계번호}-{영문slug}.md` — 그 팀원의 `references/agent-prompts.md` 시스템 프롬프트 전문을, 아래 프런트매터를 붙여 저장한다. 검토자는 `agents/review-{영문slug}.md`.
      ```
      ---
      stage: <N 또는 review>
