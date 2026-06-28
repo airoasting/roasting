@@ -112,10 +112,6 @@ roasting/
         └── SETUP.md               # ChatGPT 셋업 가이드
 ```
 
-## 영감
-
-도메인별 에이전트 팀을 구성한다는 발상은 [`revfactory/harness`](https://github.com/revfactory/harness)(에이전트 팀·스킬을 생성하는 메타-스킬)에서 영감을 얻었다. 다만 이 스킬의 50개 역할 프롬프트·12 레시피·실행/검토 로직은 AI ROASTING이 새로 작성하고 로스팅으로 검증한 독립 산출물이다.
-
 ## 라이선스
 
 Copyright 2026 AI ROASTING (Jayden Kang). [Apache License 2.0](./LICENSE) 하에 배포된다.
