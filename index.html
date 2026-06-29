@@ -740,6 +740,7 @@ footer .foot-col h4,footer .foot-bottom,footer .colophon{font-family:var(--sans)
 .tb-cat-chip{font-family:var(--mono);font-size:12.5px;font-weight:800;color:#000;background:#fff;border:var(--nb-b3);box-shadow:var(--nb-sh-sm);padding:8px 14px;cursor:pointer;border-radius:0}
 .tb-cat-chip:hover{transform:translate(-1px,-1px)}
 .tb-cat-chip:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #000}
+.tb-cat-chip.active{background:var(--yellow);box-shadow:var(--nb-sh-sm)}
 /* STEP 2 결과 헤드 */
 .tb-result-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .tb-back{font-family:var(--mono);font-size:12.5px;font-weight:800;color:#000;background:#fff;border:var(--nb-b3);box-shadow:var(--nb-sh-sm);padding:7px 13px;cursor:pointer;border-radius:0}
@@ -1383,7 +1384,11 @@ footer .foot-col h4,footer .foot-bottom,footer .colophon{font-family:var(--sans)
     var chips=$("#tbCatChips");
     HARNESS_CATS.forEach(function(name,ci){
       var b=document.createElement("button"); b.className="tb-cat-chip"; b.textContent=name;
-      b.onclick=function(){showCatRecos(ci);};
+      b.onclick=function(){
+        [].forEach.call(chips.children,function(c){c.classList.remove("active");});
+        b.classList.add("active");
+        showCatRecos(ci);
+      };
       chips.appendChild(b);
     });
     $("#tbGoBtn").onclick=function(){var g=$("#tbGoal").value.trim();if(!g){$("#tbGoal").focus();return;}renderRecos(g);};
